@@ -1,0 +1,46 @@
+/* .pageConatiner {
+  background-color: black; 
+   border: 2px solid blue;
+} */
+
+.assetConatiner {
+  display: grid;
+  /* margin-top: 200px; */
+  padding: 5%;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.assetCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  width: 563.77px;
+  align-items: center;
+  height: 216px;
+
+  border-radius: 10px;
+  border: 10px solid red;
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    #dde8d5;
+}
+
+#test {
+  font-size: 22px;
+}
+
+.assetCardHeadingContainer {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
