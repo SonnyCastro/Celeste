@@ -1,9 +1,8 @@
 import React from 'react'
-import { useQuery } from "@apollo/react-hooks";
-import gql from 'graphql-tag';
 // import styles from "./Index.module.css"
 import Link from 'next/link'
-
+import { useQuery } from "@apollo/react-hooks";
+import gql from 'graphql-tag';
 
 const QUERY = gql`
   {
@@ -19,12 +18,22 @@ function CategoryList(props) {
 
   const { loading, error, data } = useQuery(QUERY);
   console.log(data)
+  console.log(data.categories[0].name)
+  let categories = data.categories;
   return (
     <div>
       <Link href="/assets"><h1>CategoryList Page!</h1></Link>
       <h1>CategoryList Page!</h1>
-      <h1>CategoryList Page!</h1>
-      <h1>CategoryList Page!</h1>
+      {/* {{categories.map((cat) => {
+        return (
+          <div>
+          <h1>{cat.name}</h1>
+          <p>{cat.description}</p>
+          </div>
+        )
+      })}} */}
+      <h1>{props.title}</h1>
+      <h1></h1>
       <h1>CategoryList Page!</h1>
     </div>
   )
