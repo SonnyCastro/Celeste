@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache } from "@apollo/client";
 import styles from "../../styles/Categories.module.css"
 import gql from 'graphql-tag';
 import Link from "next/link";
+// import Navbar from "../../components/Navbar";
 export default function Categories({ categories }) {
   // const { loading, error, data } = useQuery(QUERY);
 
@@ -17,6 +18,7 @@ export default function Categories({ categories }) {
   // console.log(data)
   return (
     <div>
+      {/* <Navbar /> */}
       <Link href="/"><h1>All Categories</h1></Link>
       <div className={styles.container}>
       {categories.map(category => (

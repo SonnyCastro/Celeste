@@ -1,0 +1,55 @@
+.logo {
+  float: left;
+  margin-top: 23px;
+  margin-left: 142px;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 105px;
+  min-width: 1440px;
+  /* z-index: 3; */
+  background-color: #121212;
+  font-family: "Raleway", sans-serif;
+}
+
+.menuContainer {
+  position: relative;
+  margin-left: auto;
+  margin-top: 30px;
+  max-width: 850px;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  margin-right: 30px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #f2f9ec;
+  font-size: 25.71px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+
+.navLinks a:hover {
+  opacity: 0.5;
+  transition: 0.1s;
+}
+
+/* .navLinks span {
+  display: flex;
+  align-items: center;
+  font-size: 25.71px;
+} */

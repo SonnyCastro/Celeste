@@ -2,13 +2,15 @@
 
 // import App from "next/app";
 import withApollo from "../lib/apollo";
-import React, { Component } from 'react'
-
+import React from 'react'
+import Navbar from "../components/Navbar";
+import "../styles/globals.css"
 
 const MyApp = ({Component, pageProps}) => {
   
   return (
     <div>
+      <Navbar />
       <Component {...pageProps} />
     </div>
   )
