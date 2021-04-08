@@ -1,51 +1,88 @@
+import React from 'react'
+import styles from "../../styles/assets.module.css";
 
 
-export default function Assett({assetData}) {
+export default function Asset({ categoryAssets }) {
+  let assets = categoryAssets.assets;
   return (
-    <div>
-      <h1>Asset Page</h1>
-      <h1>{assetData.name}</h1>
-      <h1>{assetData.description}</h1>
+    <div className={styles.pageContainer}>
+      <div className={styles.assetConatiner}>
+      {assets.map((asset) => {
+        return (
+          <div key={asset.name} className={styles.assetCardContainer}>
+          <div className={styles.assetCardHeadingContainer}>
+            <h1>{asset.name}</h1>
+            <img src={asset.logo.url} alt="img"/>
+          </div>
+          
+          <div id={styles.test}>
+          <p>{asset.description}</p>
+          </div>
+          </div>
+        )
+      })}
+      </div>
     </div>
   )
 }
 
+// This function gets called at build time
+export async function getStaticPaths() {
+  // Call an external API endpoint to get posts
+  const res = await fetch('http://localhost:1337/categories')
+  const categories = await res.json()
 
-export async function getStaticProps() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337"
-  const client = new ApolloClient({
-    uri: `${API_URL}/graphql`,
-    cache: new InMemoryCache()
-  });
+  // Get the paths we want to pre-render based on posts
+  const paths = categories.map((category) => ({
+    params: { id: category.id},
 
-  const { data } = await client.query({
-    query: gql`
-      query GetCategories {
-        categories {
-          id
-          name
-          description
-          assets {
-            id
-            name
-            description
-          }
-        }
-    }
-    `
-  });
+  }))
 
-  return {
-    props: {
-      categories: data.categories
-    }
-  }
+  // We'll pre-render only these paths at build time.
+  // { fallback: false } means other routes should 404.
+  return { paths, fallback: false }
 }
 
-// export async function getStaticPaths() {
-//   // Return a list of possible value for id
-// }
+// This also gets called at build time
+export async function getStaticProps({ params }) {
+  // params contains the post `id`.
+  // If the route is like /posts/1, then params.id is 1
+  const res = await fetch(`http://localhost:1337/categories/${params.id}`)
+  const categoryAssets = await res.json()
 
-// export async function getStaticProps({ params }) {
-//   // Fetch necessary data for the blog post using params.id
+  // Pass post data to the page via props
+  return { props: { categoryAssets } }
+}
+
+
+
+// export async function getStaticProps() {
+//   const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337"
+//   const client = new ApolloClient({
+//     uri: `${API_URL}/graphql`,
+//     cache: new InMemoryCache()
+//   });
+
+//   const { data } = await client.query({
+//     query: gql`
+//       query GetCategories {
+//         categories {
+//           id
+//           name
+//           description
+//           assets {
+//             id
+//             name
+//             description
+//           }
+//         }
+//     }
+//     `
+//   });
+
+//   return {
+//     props: {
+//       categories: data.categories
+//     }
+//   }
 // }

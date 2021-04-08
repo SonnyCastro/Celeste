@@ -11,13 +11,13 @@ export default function Categories({ categories }) {
   // console.log(categories)
   // console.log(data.categories[0].name)
   // let categories = data.categories;
-  console.log({categories})
+  console.log(categories)
   
 
   // console.log(data)
   return (
     <div>
-      <h1>All Categories</h1>
+      <Link href="/"><h1>All Categories</h1></Link>
       <div className={styles.container}>
       {categories.map(category => (
         <div className={styles.item} key={category.id}>

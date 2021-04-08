@@ -71,12 +71,3 @@ function AssetList(props) {
   return <h5>Add Assets</h5>;
 }
 export default AssetList;
-// const index = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default index

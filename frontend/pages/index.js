@@ -11,7 +11,7 @@ const Home = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js🤪!</a>
+          Go to <a href="/categories">Categories🤪!</a>
         </h1>
 
         <p className={styles.description}>
