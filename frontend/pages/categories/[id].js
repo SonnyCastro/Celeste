@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "../../styles/assets.module.css";
 
-
 export default function Asset({ categoryAssets }) {
   let assets = categoryAssets.assets;
   return (

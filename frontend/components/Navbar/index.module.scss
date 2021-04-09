@@ -1,0 +1,110 @@
+.logo {
+  float: left;
+  margin-top: 23px;
+  margin-left: 142px;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 105px;
+  min-width: 1440px;
+  z-index: 2;
+  background-color: #121212;
+  font-family: "Raleway", sans-serif;
+}
+
+.menu_container {
+  position: relative;
+  margin-left: auto;
+  margin-top: 30px;
+  max-width: 850px;
+  & .navlinks {
+    list-style: none;
+    & li {
+      display: inline-block;
+      text-align: center;
+      align-items: center;
+      width: auto;
+      // margin-right: 20px;
+      padding-right: 20px;
+      & a {
+        text-decoration: none;
+        color: #f2f9ec;
+        font-size: 25.71px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        &:hover {
+          opacity: 0.5;
+          transition: 0.1s;
+        }
+      }
+      & span {
+        display: flex;
+        align-items: center;
+        font-size: 25.71px;
+        & .searchBar {
+          position: relative;
+          overflow: hidden;
+          top: 3.5px;
+          & .searchBarSubmit {
+            border: 0;
+            background: transparent;
+            color: #f2f9ec;
+            font-size: 25.71px;
+            outline: none;
+            &:focus {
+              outline: 0;
+            }
+
+            &:hover {
+              outline: 0;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.searchBar {
+  // border: 2px solid blue;
+  position: relative;
+  overflow: hidden;
+  top: 3.5px;
+
+  .searchBarInput {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0 0.5em;
+    background-color: transparent;
+    color: #f2f9ec;
+    opacity: 0;
+    font-size: 20.71px;
+
+    color: #f2f9ec;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:focus-within {
+    .searchBarInput {
+      opacity: 1;
+      cursor: initial;
+      width: 220px;
+      height: 25px;
+      // outline: none;
+    }
+
+    .searchBarSubmit {
+      float: right;
+      // padding-right: 10px;
+    }
+  }
+}

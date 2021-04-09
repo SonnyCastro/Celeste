@@ -1,7 +1,8 @@
 import React from 'react'
-import styles from "./index.module.css"
+import styles from "./index.module.scss"
 import Link from "next/link";
 import Image from 'next/image';
+import { CgSearch } from 'react-icons/cg'
 
 // import greenlogo from "../../public/greenlogo2.png";
 const index = () => {
@@ -20,15 +21,15 @@ const index = () => {
       </a>
     </Link>
     </div>
-    <div className={styles.menuContainer}>
-    <ul className={styles.navLinks}>
+    <div className={styles.menu_container}>
+    <ul className={styles.navlinks}>
         <li><Link href="/categories"><a>Apps</a></Link></li>
         <li><Link href="#"><a>Creators</a></Link></li>
         <li><Link href="#"><a>Blog</a></Link></li>
         <li><Link href="#"><a>News</a></Link></li>
         <li><Link href="#"><a>Tutorials</a></Link></li>
-        {/* <li><span><div class='search-bar'><button class='search-bar__submit' aria-label='submit search'><CgSearch /></button>
-        <input type='text' class='search-bar__input' aria-label='search'/></div></span></li> */}
+        <li><span><div className={styles.searchBar}><button className={styles.searchBarSubmit} aria-label='submit search'><CgSearch id={styles.svg} /></button>
+        <input type='text' class={styles.searchBarInput} aria-label='search'/></div></span></li>
     </ul>
     </div>
     </nav>
@@ -36,4 +37,4 @@ const index = () => {
   )
 }
 
-export default index
+export default index;
