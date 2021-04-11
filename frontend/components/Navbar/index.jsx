@@ -26,7 +26,7 @@ const index = () => {
          <Link href="#"><a className={styles.navbar__menu__links}>Blog</a></Link>
          <Link href="#"><a className={styles.navbar__menu__links}>News</a></Link>
          <Link href="#"><a className={styles.navbar__menu__links}>Tutorials</a></Link>
-         <CgSearch className={styles.test}/>
+         <CgSearch className={styles.searchIcon}/>
        </div>
      </nav>
    </>

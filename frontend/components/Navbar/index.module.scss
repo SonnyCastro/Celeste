@@ -20,6 +20,7 @@
 
   &__logo {
     cursor: pointer;
+    width: 42.33px;
     margin-left: 24px;
     @extend %align-center;
   }
@@ -60,8 +61,12 @@
   }
 }
 
-.test {
+.searchIcon {
   margin-top: 5px;
+  &:hover {
+    color: grey;
+    transition: all 0.3s ease;
+  }
 }
 
 // .logo {
