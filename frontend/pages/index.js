@@ -22,14 +22,16 @@ const Home = () => {
             <p>Find your place in the metaverse and discover practical cryptocurrency use cases to earn and save money.</p>
           </div>
           <div></div>
-          <button>Get Started</button>
+          <button className={styles.behind_btn1}>Get Started</button>
           <div></div>
-          <button>Get Featured</button>
+          <button className={styles.behind_btn2}>Get Featured</button>
         </div>
+        
     </div>
     <div className={styles.container2}>
-      <h1>hello</h1>
+      <h1>Check Price In Real Time</h1>
     </div>
+    
     </>
   )
 }

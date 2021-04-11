@@ -15,7 +15,7 @@
 
 .banner {
   position: relative;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   top: 131px;
 }
 .banner_title {
@@ -26,6 +26,13 @@
   line-height: 40px;
 }
 
+#web3 {
+  color: transparent;
+  background-image: linear-gradient(90deg, #fbfcff -30%, #ccdefc 100%);
+  background-size: 100%;
+  background-clip: text;
+}
+
 .subtitle {
   font-family: Raleway;
   font-style: normal;
@@ -34,5 +41,39 @@
   line-height: 167.5%;
 }
 
-/* .container2 {
-} */
+.behind_btn1 {
+  background: #dde8d5;
+  width: 104px;
+  height: 30px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+}
+
+.behind_btn2 {
+  background: radial-gradient(
+    99.99% 514.99% at 100.13% 49.64%,
+    #ffe9d5 0%,
+    #f8e2ff 0.01%,
+    rgb(161, 182, 202) 100%
+  );
+  width: 104px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.container2 {
+  background-color: black;
+  position: relative;
+  bottom: 1px;
+  min-height: 100vh;
+  color: #ccdefc;
+}
