@@ -19,6 +19,7 @@ function Assets() {
           <AssetList key={query} search={query} />
           {/* <CategoryList /> */}
           </div>
+          
     </div>
   );
 }

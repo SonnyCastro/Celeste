@@ -1,5 +1,5 @@
 .container {
-  min-height: 80vh;
+  min-height: 75vh;
   /* height: 458.49px; */
   display: flex;
   flex-direction: column;
@@ -36,9 +36,10 @@
 .subtitle {
   font-family: Raleway;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 15px;
   line-height: 167.5%;
+  /* width: 280px; */
 }
 
 .behind_btn1 {
@@ -75,5 +76,17 @@
   position: relative;
   bottom: 1px;
   min-height: 100vh;
-  color: #ccdefc;
+  color: #f2f9ec;
+  padding: 0 1rem;
+}
+
+.test {
+  color: #f2f9ec;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
 }
