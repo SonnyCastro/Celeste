@@ -66,7 +66,27 @@ const Home = ({ topTenDefi }) => {
         width={500}
         height={10}
       />
+      
     </div>
+    <section className={styles.sectionConatiner}>
+      <div className={styles.imgc}>
+        <Image 
+        src="/Container.png"
+        alt="logo"
+        width={315}
+        height={500}
+      />
+      </div>
+      <div style={{position:"absolute", left:"40px", top:"-75px", color:"white"}}>
+      <Image 
+        src="/zl.png"
+        alt="logo"
+        width={300}
+        height={400}
+      />
+      <p style={{position:"absolute", left:"220px", bottom:"225px", color:"white"}}>ART</p>
+      </div>
+    </section>
     
     </>
   )

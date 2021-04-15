@@ -74,10 +74,7 @@
 
 .container2 {
   background-color: black;
-  position: relative;
-  bottom: 1px;
-  /* min-height: 100vh; */
-  height: 200vh;
+  height: 100%;
   color: #f2f9ec;
   padding-inline: 1.5rem;
 }
@@ -150,3 +147,15 @@
     display: none;
   }
 } */
+
+/* featured section below  */
+
+.sectionConatiner {
+  background-color: black;
+  padding: 2rem 0.5rem;
+  min-height: 85vh;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: start; */
+  /* align-items: flex-start; */
+}

@@ -20,14 +20,14 @@ const index = () => {
          </a>
        </Link>
        <div className={styles.navbar__bars}><i className="fas fa-bars"></i></div>
-       <div className={styles.navbar__menu}>
-         <Link href="/categories"><a className={styles.navbar__menu__links}>Apps</a></Link>
-         <Link href="#"><a className={styles.navbar__menu__links}>Creators</a></Link>
-         <Link href="#"><a className={styles.navbar__menu__links}>Blog</a></Link>
-         <Link href="#"><a className={styles.navbar__menu__links}>News</a></Link>
-         <Link href="#"><a className={styles.navbar__menu__links}>Tutorials</a></Link>
-         <CgSearch className={styles.searchIcon}/>
-       </div>
+       <ul className={styles.navbar__menu}>
+         <li><Link href="/categories"><a className={styles.navbar__menu__links}>Apps</a></Link></li>
+         <li><Link href="#"><a className={styles.navbar__menu__links}>Creators</a></Link></li>
+         <li><Link href="#"><a className={styles.navbar__menu__links}>Blog</a></Link></li>
+         <li><Link href="#"><a className={styles.navbar__menu__links}>News</a></Link></li>
+         <li><Link href="#"><a className={styles.navbar__menu__links}>Tutorials</a></Link></li>
+         <li><CgSearch className={styles.searchIcon}/></li>
+       </ul>
      </nav>
    </>
   )
