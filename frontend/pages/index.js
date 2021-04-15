@@ -37,10 +37,35 @@ const Home = ({ topTenDefi }) => {
         width={500}
         height={10}
       />
-      <p>Top 10 Most Popular DeFi Assets</p>
+      <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
       {topTenDefi.map((defi) => {
-        return <h1>{defi.name}</h1>
+        return (
+          <div className={styles.defiContainer} id={defi.id} key={defi.id}>
+            <div><Image 
+              className={styles.defiImg}
+              src={defi.image}
+              alt="logo"
+              width={30}
+              height={30}
+            />
+            </div>
+            <p className={styles.symbol}>{defi.symbol}</p>
+            {/* <p className={styles.symbol2}>{defi.symbol}</p> */}
+            <p className={styles.currentPrice}>${defi.current_price.toFixed(2)}</p>
+            {defi.price_change_percentage_24h < 0 ? 
+          (<p className={styles.currentPriceChange, styles.red}>{defi.price_change_percentage_24h.toFixed(2)}%</p>)
+          :( <p className={styles.currentPriceChange, styles.green}>{defi.price_change_percentage_24h.toFixed(2)}%</p>)}
+            {/* <p className={styles.currentPriceChange}>{defi.price_change_percentage_24h.toFixed(2)}</p> */}
+          </div>
+        )
       })}
+      <h1 className={styles.test}>Celeste’s Pick of The Day</h1>
+      <Image 
+        src="/breakline.png"
+        alt="logo"
+        width={500}
+        height={10}
+      />
     </div>
     
     </>
