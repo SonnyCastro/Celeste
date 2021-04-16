@@ -1,0 +1,49 @@
+.defiContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 327px; */
+  background-color: #f2f9ec;
+  color: black;
+  height: 65.91px;
+  margin-block: 16px;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+/* .defiContainer > * {
+  padding-right: 5px;
+} */
+
+.symbol {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.currentPrice {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.currentPriceChange {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

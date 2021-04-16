@@ -1,5 +1,5 @@
 .container {
-  min-height: 75vh;
+  min-height: 65vh;
   /* height: 458.49px; */
   display: flex;
   flex-direction: column;
@@ -148,14 +148,72 @@
   }
 } */
 
-/* featured section below  */
+/* featured pick section below  */
 
-.sectionConatiner {
+.homeC {
   background-color: black;
-  padding: 2rem 0.5rem;
-  min-height: 85vh;
+  padding-bottom: 100px;
+  /* spacing instead of in individual divs */
+}
+
+.sectionContainer {
   position: relative;
-  /* display: flex; */
-  /* justify-content: start; */
-  /* align-items: flex-start; */
+  margin-left: 1.5rem;
+  color: white;
+  width: 85vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: stretch;
+}
+
+.c {
+  background: url("../public/featured.png");
+  background-position: end;
+  background-repeat: no-repeat;
+  height: 75vh;
+
+  /* padding-bottom: 15px; */
+  /* background-size: cover; */
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionContainer {
+    flex-direction: row-reverse;
+  }
+}
+
+.testing123 {
+  position: absolute;
+  bottom: 300px;
+  margin-left: 1.5rem;
+}
+/* .imgc {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+} */
+
+.imgzora {
+  position: absolute;
+  bottom: 570px;
+}
+
+.imgzoracat {
+  float: right;
+  margin-top: 25px;
+  background: #9f99e0;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.02em;
 }

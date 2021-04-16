@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from "next/image";
 import styles from '../styles/Home.module.css'
+import DeFiChart from "../components/DeFiChart";
 // import Navbar from "../components/Navbar";
 
 const Home = ({ topTenDefi }) => {
   return (
-    <>
+    <div className={styles.homeC}>
     <header className={styles.container}>
       <Head>
         <title>Celeste</title>
@@ -38,27 +39,7 @@ const Home = ({ topTenDefi }) => {
         height={10}
       />
       <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
-      {topTenDefi.map((defi) => {
-        return (
-          <div className={styles.defiContainer} id={defi.id} key={defi.id}>
-            <div><Image 
-              className={styles.defiImg}
-              src={defi.image}
-              alt="logo"
-              width={30}
-              height={30}
-            />
-            </div>
-            <p className={styles.symbol}>{defi.symbol}</p>
-            {/* <p className={styles.symbol2}>{defi.symbol}</p> */}
-            <p className={styles.currentPrice}>${defi.current_price.toFixed(2)}</p>
-            {defi.price_change_percentage_24h < 0 ? 
-          (<p className={styles.currentPriceChange, styles.red}>{defi.price_change_percentage_24h.toFixed(2)}%</p>)
-          :( <p className={styles.currentPriceChange, styles.green}>{defi.price_change_percentage_24h.toFixed(2)}%</p>)}
-            {/* <p className={styles.currentPriceChange}>{defi.price_change_percentage_24h.toFixed(2)}</p> */}
-          </div>
-        )
-      })}
+      <DeFiChart topTenDefi={topTenDefi}/>
       <h1 className={styles.test}>Celeste’s Pick of The Day</h1>
       <Image 
         src="/breakline.png"
@@ -66,29 +47,30 @@ const Home = ({ topTenDefi }) => {
         width={500}
         height={10}
       />
-      
     </div>
-    <section className={styles.sectionConatiner}>
-      <div className={styles.imgc}>
+
+    {/* Featured Pick Section */}
+    <section className={styles.sectionContainer}>
+      <div className={styles.c}>
+      <div className={styles.c}>
+        <button className={styles.imgzoracat}>ART</button>
         <Image 
-        src="/Container.png"
-        alt="logo"
-        width={315}
-        height={500}
-      />
+          src="/ZL.png"
+          alt="logo"
+          width={400}
+          height={400}
+          className={styles.imgzora}
+        />
       </div>
-      <div style={{position:"absolute", left:"40px", top:"-75px", color:"white"}}>
-      <Image 
-        src="/zl.png"
-        alt="logo"
-        width={300}
-        height={400}
-      />
-      <p style={{position:"absolute", left:"220px", bottom:"225px", color:"white"}}>ART</p>
+      <div className={styles.testing123}>
+        <h1>ZORA</h1>
+        <p>Zora protocol enables artists to permissionlessly tokenize media on the blockchain by minting their own NFT markets.</p>
+        <button>Visit</button>
+      </div>
       </div>
     </section>
     
-    </>
+    </div>
   )
 }
 
