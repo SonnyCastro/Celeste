@@ -52,21 +52,23 @@ const Home = ({ topTenDefi }) => {
     {/* Featured Pick Section */}
     <section className={styles.sectionContainer}>
       <div className={styles.c}>
-      <div className={styles.c}>
-        <button className={styles.imgzoracat}>ART</button>
-        <Image 
-          src="/ZL.png"
-          alt="logo"
-          width={400}
-          height={400}
-          className={styles.imgzora}
-        />
-      </div>
-      <div className={styles.testing123}>
-        <h1>ZORA</h1>
-        <p>Zora protocol enables artists to permissionlessly tokenize media on the blockchain by minting their own NFT markets.</p>
-        <button>Visit</button>
-      </div>
+        <div id={styles.moveup}>
+          <div id={styles.imgzora}>
+          <Image 
+            src="/ZL.png"
+            alt="logo"
+            width={300}
+            height={300}
+            
+          />
+          </div>
+          <button className={styles.imgzoracat}>ART</button>
+        </div>
+        <div className={styles.featured_content}>
+          <h1>ZORA</h1>
+          <p>Zora protocol enables artists to permissionlessly tokenize media on the blockchain by minting their own NFT markets.</p>
+          <button>Visit</button>
+        </div>
       </div>
     </section>
     
