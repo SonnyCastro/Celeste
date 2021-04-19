@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
 import DeFiChart from "../components/DeFiChart";
+import { TwitterTimelineEmbed, TwitterTweetEmbed, TwitterVideoEmbed} from 'react-twitter-embed';
+
 // import Navbar from "../components/Navbar";
 
 const Home = ({ topTenDefi }) => {
@@ -41,7 +43,7 @@ const Home = ({ topTenDefi }) => {
       />
       <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
       <DeFiChart topTenDefi={topTenDefi}/>
-      <h1 className={styles.test}>Celeste’s Pick of The Day</h1>
+      <h1 className={styles.pickOfDay}>Celeste’s Pick of The Day</h1>
       <Image 
         src="/breakline.png"
         alt="logo"
@@ -66,7 +68,7 @@ const Home = ({ topTenDefi }) => {
         <div className={styles.featured_content}>
           <h1 className={styles.featured_title}>ZORA</h1>
           <p className={styles.featured_subtitle}>Zora protocol enables artists to permissionlessly tokenize media on the blockchain by minting their own NFT markets.</p>
-          <button className={styles.featured_visit_btn}>Visit Zora.co</button>
+          <Link href="#categories"><a><button className={styles.featured_visit_btn}>Visit Zora.co</button></a></Link>
         </div>
       </div>
     </section>
@@ -83,7 +85,7 @@ const Home = ({ topTenDefi }) => {
           </a>
         </Link>
 
-        <Link href="#DeFi">
+        <Link href="#Art">
           <a className={styles.menu_card}>
             <div className={styles.art + " " + styles.menu_card_content}>
               <h1 className={styles.menu_title}>Art</h1>
@@ -92,7 +94,7 @@ const Home = ({ topTenDefi }) => {
           </a>
         </Link>
 
-        <Link href="#DeFi">
+        <Link href="#Social">
           <a className={styles.menu_card}>
             <div className={styles.social + " " + styles.menu_card_content}>
               <h1 className={styles.menu_title}>Social</h1>
@@ -101,7 +103,7 @@ const Home = ({ topTenDefi }) => {
           </a>
         </Link>
 
-        <Link href="#DeFi">
+        <Link href="#Trade">
           <a className={styles.menu_card}>
             <div className={styles.trade + " " + styles.menu_card_content}>
               <h1 className={styles.menu_title}>Trade</h1>
@@ -112,6 +114,22 @@ const Home = ({ topTenDefi }) => {
         <Link href="/categories"><a className={styles.link}>View Categories</a></Link>
       </div>
     </div>
+
+    {/* twitter */}
+    <div className={styles.container2}>
+      <h1 className={styles.test}>Crypto Twitter</h1>
+      <Image 
+        src="/breakline.png"
+        alt="logo"
+        width={500}
+        height={10}
+      />
+      <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" />
+      <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
+      <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
+      
+    </div>
+
     
     </div>
   )

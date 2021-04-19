@@ -92,6 +92,26 @@
   align-items: center;
   padding-block-start: 3rem;
 }
+
+.pickOfDay {
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    linear-gradient(0deg, #dde8d5, #dde8d5);
+  background-clip: text;
+  color: transparent;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  padding-block-start: 3rem;
+}
 /* code below is for the top ten chart */
 .defiContainer {
   display: flex;
@@ -268,16 +288,16 @@
 /* app menu  */
 
 .appsContainer {
-  background-color: #121212;
-  min-height: 100vh;
+  background-color: black;
+  /* height: 10vh; */
   display: flex;
   padding: 1.5rem 1.5rem;
   justify-content: center;
 }
 
 .innerC {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .menu_card {
@@ -285,13 +305,10 @@
 }
 
 .defi {
-  background: linear-gradient(270deg, #121212 18.75%, rgba(0, 0, 0, 0) 100%),
+  background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
     #dde8d5;
   border-radius: 8px;
-  width: 322.11px;
   height: 105.89px;
-  -webkit-transition: margin-left 0.15s ease-in-out;
-  transition: margin-left 0.15s ease-in-out;
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
@@ -306,7 +323,7 @@
   flex-direction: column;
   padding-left: 1rem;
   justify-content: center;
-  width: 322.11px;
+  /* width: 322.11px; */
   height: 105.89px;
 }
 
@@ -318,7 +335,7 @@
   flex-direction: column;
   padding-left: 1rem;
   justify-content: center;
-  width: 322.11px;
+  /* width: 322.11px; */
   height: 105.89px;
 }
 
@@ -330,7 +347,7 @@
   flex-direction: column;
   padding-left: 1rem;
   justify-content: center;
-  width: 322.11px;
+  /* width: 322.11px; */
   height: 105.89px;
 }
 
