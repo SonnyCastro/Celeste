@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from "next/image";
 import styles from '../styles/Home.module.css'
+import Link from "next/link";
 import DeFiChart from "../components/DeFiChart";
 // import Navbar from "../components/Navbar";
 
@@ -52,24 +53,65 @@ const Home = ({ topTenDefi }) => {
     {/* Featured Pick Section */}
     <section className={styles.sectionContainer}>
       <div className={styles.content_container}>
+      <button className={styles.imgzoracat}>Art</button>
+
         <div id={styles.moveup}>
-          {/* <div id={styles.imgzora}> */}
           <Image 
             src="/ZL.png"
             alt="logo"
             width={400}
             height={400}
           />
-          {/* </div> */}
-          <button className={styles.imgzoracat}>Art</button>
         </div>
         <div className={styles.featured_content}>
           <h1 className={styles.featured_title}>ZORA</h1>
           <p className={styles.featured_subtitle}>Zora protocol enables artists to permissionlessly tokenize media on the blockchain by minting their own NFT markets.</p>
-          <button className={styles.featured_visit_btn}>Visit</button>
+          <button className={styles.featured_visit_btn}>Visit Zora.co</button>
         </div>
       </div>
     </section>
+
+    {/* new section */}
+    <div className={styles.appsContainer}>
+      <div className={styles.innerC}>
+        <Link href="#DeFi">
+          <a className={styles.menu_card}>
+            <div className={styles.defi + " " + styles.menu_card_content}>
+              <h1 className={styles.menu_title}>DeFi</h1>
+              <p className={styles.menu_subtitle}> Decentralized Finance</p>
+            </div>
+          </a>
+        </Link>
+
+        <Link href="#DeFi">
+          <a className={styles.menu_card}>
+            <div className={styles.art + " " + styles.menu_card_content}>
+              <h1 className={styles.menu_title}>Art</h1>
+              <p className={styles.menu_subtitle}>Cryptomedia & NFTs</p>
+            </div>
+          </a>
+        </Link>
+
+        <Link href="#DeFi">
+          <a className={styles.menu_card}>
+            <div className={styles.social + " " + styles.menu_card_content}>
+              <h1 className={styles.menu_title}>Social</h1>
+              <p className={styles.menu_subtitle}>Tokens & Communities</p>
+            </div>
+          </a>
+        </Link>
+
+        <Link href="#DeFi">
+          <a className={styles.menu_card}>
+            <div className={styles.trade + " " + styles.menu_card_content}>
+              <h1 className={styles.menu_title}>Trade</h1>
+              <p className={styles.menu_subtitle}>Markets & Exchanges</p>
+            </div>
+          </a>
+        </Link>
+        <Link href="/categories"><a className={styles.link}>View Categories</a></Link>
+      </div>
+    </div>
     
     </div>
   )

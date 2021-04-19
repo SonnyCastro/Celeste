@@ -179,11 +179,11 @@
   /* border: 2px solid red; */
   position: relative;
   /* height: 100px; */
-  left: 1rem;
+  left: 2rem;
 }
 
 .imgzoracat {
-  float: left;
+  float: right;
   margin-top: 25px;
   /* margin-left: 25px; */
   background: #9f99e0;
@@ -213,7 +213,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 272px;
+  /* width: 272px; */
   height: 270px;
   position: relative;
   /* top: 50px; */
@@ -228,7 +228,7 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 47px;
   color: #dde8d5;
 }
@@ -263,4 +263,108 @@
   justify-content: center;
   align-items: center;
   color: #121212;
+}
+
+/* app menu  */
+
+.appsContainer {
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  justify-content: center;
+}
+
+.innerC {
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu_card {
+  padding: 0 1rem;
+}
+
+.defi {
+  background: linear-gradient(270deg, #121212 18.75%, rgba(0, 0, 0, 0) 100%),
+    #dde8d5;
+  border-radius: 8px;
+  width: 322.11px;
+  height: 105.89px;
+  -webkit-transition: margin-left 0.15s ease-in-out;
+  transition: margin-left 0.15s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+}
+
+.art {
+  background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
+    #9f99e0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+  width: 322.11px;
+  height: 105.89px;
+}
+
+.social {
+  background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
+    #79bfff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+  width: 322.11px;
+  height: 105.89px;
+}
+
+.trade {
+  background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
+    #d7d4f7;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+  width: 322.11px;
+  height: 105.89px;
+}
+
+.menu_card_content:hover {
+  margin-left: 10px;
+  transition: 0.15s ease-in-out;
+}
+.menu_title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.menu_subtitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.link {
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    linear-gradient(0deg, #dde8d5, #dde8d5);
+  background-clip: text;
+  color: transparent;
+  text-decoration: underline solid white;
+  float: right;
+  margin-top: 1rem;
 }
