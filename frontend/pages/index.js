@@ -36,18 +36,18 @@ const Home = ({ topTenDefi }) => {
     <div className={styles.container2}>
       <h1 className={styles.test}>Check Price In Real Time</h1>
       <Image 
-        src="/breakline.png"
+        src="/line.svg"
         alt="logo"
-        width={500}
+        width={400}
         height={10}
       />
       <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
       <DeFiChart topTenDefi={topTenDefi}/>
       <h1 className={styles.pickOfDay}>Celeste’s Pick of The Day</h1>
       <Image 
-        src="/breakline.png"
+        src="/line.svg"
         alt="logo"
-        width={500}
+        width={400}
         height={10}
       />
     </div>
@@ -119,17 +119,59 @@ const Home = ({ topTenDefi }) => {
     <div className={styles.container2}>
       <h1 className={styles.test}>Crypto Twitter</h1>
       <Image 
-        src="/breakline.png"
+        src="/line.svg"
         alt="logo"
-        width={500}
+        width={400}
         height={10}
       />
-      <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" />
-      <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
-      <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
+      {/* <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" options={{width: 400}} /> */}
+      <TwitterTweetEmbed  sourceType="profile" tweetId="1370142150449639432" options={{width: 250}}/>
+      <TwitterTweetEmbed  sourceType="profile" tweetId="1370142150449639432" options={{width: 250}}/>
+      <TwitterTweetEmbed  sourceType="profile" tweetId="1370142150449639432" options={{width: 250}}/>
       
     </div>
 
+    {/* events */}
+    <div className={styles.container2}>
+      <h1 className={styles.test}>Events</h1>
+      <Image 
+        src="/line.svg"
+        alt="logo"
+        width={400}
+        height={10}
+      />
+      
+      <div className={styles.a}>
+        <div className={styles.b}>
+          <div className={styles.innerb}>
+            <div className={styles.innerbdate}>
+            08.01.21
+            </div>
+          </div>
+          <div className={styles.innerb2}>
+            <h1 className={styles.innerb2Title}>Devcon Colombia</h1>
+            <p className={styles.innerb2SubTitle}>Now that we’re well into the new year, our Devcon team wanted to share....</p>
+            <div className={styles.innerb2btn}><Link href="#news"><a >Learn More</a></Link></div>
+            
+          </div>
+        </div>
+        <div className={styles.b}>
+          <div className={styles.innerb}>
+            <div className={styles.innerbdate}>
+            08.01.21
+            </div>
+          </div>
+          <div className={styles.innerb2}>
+            <h1 className={styles.innerb2Title}>Devcon Colombia</h1>
+            <p className={styles.innerb2SubTitle}>Now that we’re well into the new year, our Devcon team wanted to share....</p>
+            <div className={styles.innerb2btn}><Link href="#news"><a >Learn More</a></Link></div>
+            
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
     
     </div>
   )
