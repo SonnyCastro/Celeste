@@ -19,7 +19,11 @@ const index = () => {
           />
          </a>
        </Link>
-       <div className={styles.navbar__bars}><i className="fas fa-bars"></i></div>
+       <input type="checkbox" id={styles.nav_toggle} className={styles.nav_toggle}/>
+       <label htmlFor={styles.nav_toggle} className={styles.navbar__bars}>
+       <span><i className="fas fa-bars"></i></span>
+       </label>
+       {/* <div className={styles.navbar__bars}><i className="fas fa-bars"></i></div> */}
        <ul className={styles.navbar__menu}>
          <li><Link href="/categories"><a className={styles.navbar__menu__links}>Apps</a></Link></li>
          <li><Link href="#"><a className={styles.navbar__menu__links}>Creators</a></Link></li>

@@ -5,6 +5,24 @@
   align-items: center;
 }
 
+#nav_toggle {
+  display: none;
+}
+
+.nav_toggle:checked ~ .navbar__menu {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  right: -1px;
+  background-color: black;
+
+  .navbar__menu__links {
+    padding-block: 0.5rem;
+  }
+}
+
 .navbar {
   height: 80px;
   display: flex;
