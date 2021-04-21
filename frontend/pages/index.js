@@ -2,14 +2,16 @@ import Head from 'next/head'
 import Image from "next/image";
 import styles from '../styles/Home.module.css'
 import Link from "next/link";
+import UpcomingEvents from "../components/UpcomingEvents"
 import DeFiChart from "../components/DeFiChart";
-import { TwitterTimelineEmbed, TwitterTweetEmbed, TwitterVideoEmbed} from 'react-twitter-embed';
+import FeaturedPick from "../components/FeaturedPick";
+import CategorySlides from "../components/CategorySlides";
+import Tweets from "../components/Tweets";
 
-// import Navbar from "../components/Navbar";
 
 const Home = ({ topTenDefi }) => {
   return (
-    <div className={styles.homeC}>
+  <>
     <header className={styles.container}>
       <Head>
         <title>Celeste</title>
@@ -33,150 +35,26 @@ const Home = ({ topTenDefi }) => {
         </div>
         
     </header>
-    <div className={styles.container2}>
-      <h1 className={styles.test}>Check Price In Real Time</h1>
-      <Image 
-        src="/line.svg"
-        alt="logo"
-        width={400}
-        height={10}
-      />
-      <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
-      <DeFiChart topTenDefi={topTenDefi}/>
-      <h1 className={styles.pickOfDay}>Celeste’s Pick of The Day</h1>
-      <Image 
-        src="/line.svg"
-        alt="logo"
-        width={400}
-        height={10}
-      />
-    </div>
-
-    {/* Featured Pick Section */}
-    <section className={styles.sectionContainer}>
-      <div className={styles.content_container}>
-      <button className={styles.imgzoracat}>Art</button>
-
-        <div id={styles.moveup}>
-          <Image 
-            src="/ZL.png"
-            alt="logo"
-            width={400}
-            height={400}
-          />
-        </div>
-        <div className={styles.featured_content}>
-          <h1 className={styles.featured_title}>ZORA</h1>
-          <p className={styles.featured_subtitle}>Zora protocol enables artists to permissionlessly tokenize media on the blockchain by minting their own NFT markets.</p>
-          <Link href="#categories"><a><button className={styles.featured_visit_btn}>Visit Zora.co</button></a></Link>
-        </div>
-      </div>
-    </section>
-
-    {/* new section */}
-    <div className={styles.appsContainer}>
-      <div className={styles.innerC}>
-        <Link href="#DeFi">
-          <a className={styles.menu_card}>
-            <div className={styles.defi + " " + styles.menu_card_content}>
-              <h1 className={styles.menu_title}>DeFi</h1>
-              <p className={styles.menu_subtitle}> Decentralized Finance</p>
-            </div>
-          </a>
-        </Link>
-
-        <Link href="#Art">
-          <a className={styles.menu_card}>
-            <div className={styles.art + " " + styles.menu_card_content}>
-              <h1 className={styles.menu_title}>Art</h1>
-              <p className={styles.menu_subtitle}>Cryptomedia & NFTs</p>
-            </div>
-          </a>
-        </Link>
-
-        <Link href="#Social">
-          <a className={styles.menu_card}>
-            <div className={styles.social + " " + styles.menu_card_content}>
-              <h1 className={styles.menu_title}>Social</h1>
-              <p className={styles.menu_subtitle}>Tokens & Communities</p>
-            </div>
-          </a>
-        </Link>
-
-        <Link href="#Trade">
-          <a className={styles.menu_card}>
-            <div className={styles.trade + " " + styles.menu_card_content}>
-              <h1 className={styles.menu_title}>Trade</h1>
-              <p className={styles.menu_subtitle}>Markets & Exchanges</p>
-            </div>
-          </a>
-        </Link>
-        <Link href="/categories"><a className={styles.link}>View Categories</a></Link>
-      </div>
-    </div>
-
-    {/* twitter */}
-    <div className={styles.container2}>
-      <h1 className={styles.test}>Crypto Twitter</h1>
-      <Image 
-        src="/line.svg"
-        alt="logo"
-        width={400}
-        height={10}
-      />
-      {/* <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" options={{width: 400}} /> */}
-      <div className={styles.center}>
-        <TwitterTweetEmbed  sourceType="profile" tweetId="1370142150449639432" options={{width: 250}}/>
-        <TwitterTweetEmbed  sourceType="profile" tweetId="1370142150449639432" options={{width: 250}}/>
-        <TwitterTweetEmbed  sourceType="profile" tweetId="1370142150449639432" options={{width: 250}}/>
-      </div>
-      
-    </div>
-
-    {/* events */}
-    <div className={styles.container2}>
-      <h1 className={styles.test}>Events</h1>
-      <Image 
-        src="/line.svg"
-        alt="logo"
-        width={400}
-        height={10}
-      />
-      
-      <div className={styles.a}>
-        <div className={styles.b}>
-          <div className={styles.innerb}>
-            <div className={styles.innerbdate}>
-            08.01.21
-            </div>
-          </div>
-          <div className={styles.innerb2}>
-            <h1 className={styles.innerb2Title}>Devcon Colombia</h1>
-            <p className={styles.innerb2SubTitle}>Now that we’re well into the new year, our Devcon team wanted to share....</p>
-            <div className={styles.innerb2btn}><Link href="#news"><a >Learn More</a></Link></div>
-            
-          </div>
-        </div>
-        {/* 2nd event */}
-        <div className={styles.b}>
-          <div className={styles.innerb}>
-            <div className={styles.innerbdate}>
-            08.01.21
-            </div>
-          </div>
-          <div className={styles.innerb2}>
-            <h1 className={styles.innerb2Title}>Devcon Colombia</h1>
-            <p className={styles.innerb2SubTitle}>Now that we’re well into the new year, our Devcon team wanted to share....</p>
-            <div className={styles.innerb2btn}><Link href="#news"><a >Learn More</a></Link></div>
-            
-          </div>
-        </div>
+    {/* home content */}
+    <div className={styles.homeC}>
+      <div>
+        <h1 className={styles.test}>Check Price In Real Time</h1>
+        <Image 
+          src="/line.svg"
+          alt="logo"
+          width={400}
+          height={10}
+        />
+        <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
+        <DeFiChart topTenDefi={topTenDefi}/>
+        <FeaturedPick />
+        <CategorySlides />
+        <Tweets />
+        <UpcomingEvents />
       </div>
 
-      
-    </div>
-    
-    </div>
+      </div>
+    </>
   )
 }
 

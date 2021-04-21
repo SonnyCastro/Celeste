@@ -1,0 +1,124 @@
+.pickOfDay {
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    linear-gradient(0deg, #dde8d5, #dde8d5);
+  background-clip: text;
+  color: transparent;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  padding-block-start: 3rem;
+}
+
+.sectionContainer {
+  margin-top: 1.5rem;
+}
+
+.content_container {
+  background: url("../../public/featured.png");
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 400px;
+  /* border: 2px solid red; */
+}
+
+#moveup {
+  display: flex;
+  /* border: 2px solid red; */
+  position: relative;
+  /* height: 100px; */
+  left: 2rem;
+}
+
+.imgzoracat {
+  float: right;
+  margin-top: 25px;
+  /* margin-left: 25px; */
+  background: #9f99e0;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  justify-content: flex-end;
+  align-items: center;
+  width: 62.51px;
+  height: 25.56px;
+}
+
+/* @media screen and (min-width: 1200px) {
+  #moveup {
+    flex-direction: row;
+  }
+} */
+
+.featured_content {
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 272px; */
+  height: 270px;
+  position: relative;
+  /* top: 50px; */
+  left: 1rem;
+}
+
+.featured_content > * {
+  margin-block: 0.5rem;
+}
+
+.featured_title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 47px;
+  color: #dde8d5;
+}
+
+.featured_subtitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #dde8d5;
+}
+
+.featured_visit_btn {
+  width: 12rem;
+  border: none;
+  padding: 1rem;
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    #dde8d5;
+  border-radius: 4px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121212;
+  cursor: pointer;
+}

@@ -1,8 +1,9 @@
 .container {
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
   color: aliceblue;
-  background-color: black;
   width: 100%;
+  background-color: black;
+  /* border: 2px solid red; */
 }
 
 .title {
@@ -45,13 +46,15 @@
 }
 
 .input {
-  width: 90%;
+  width: 250px;
   height: 2.75rem;
   background-color: transparent;
   border: 1px solid #dde8d5;
   box-sizing: border-box;
   border-radius: 3px;
   margin-bottom: 10px;
+  color: white;
+  outline: none;
 }
 
 .container2 {
@@ -67,9 +70,11 @@
   font-size: 16px;
   line-height: 19px;
   color: #dde8d5;
+  /* text-align: center; */
 }
 
 .footersubheading {
+  /* text-align: center; */
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;

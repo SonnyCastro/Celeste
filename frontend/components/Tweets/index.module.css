@@ -1,0 +1,16 @@
+.test {
+  color: #f2f9ec;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  padding-block-start: 3rem;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
