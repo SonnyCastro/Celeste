@@ -5,6 +5,7 @@ import withApollo from "../lib/apollo";
 import React from 'react'
 import Navbar from "../components/Navbar";
 import "../styles/globals.css"
+import Footer from "../components/Footer";
 
 const MyApp = ({Component, pageProps}) => {
   
@@ -12,6 +13,7 @@ const MyApp = ({Component, pageProps}) => {
     <div>
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </div>
   )
 }

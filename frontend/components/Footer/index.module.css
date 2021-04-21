@@ -1,0 +1,79 @@
+.container {
+  padding: 1rem 1rem;
+  color: aliceblue;
+  background-color: black;
+  width: 100%;
+}
+
+.title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 28px;
+  text-align: start;
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    linear-gradient(0deg, #dde8d5, #dde8d5);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #f2f9ec;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.icon {
+  position: relative;
+  right: 2rem;
+  top: 0.2rem;
+  color: white;
+}
+
+.input {
+  width: 90%;
+  height: 2.75rem;
+  background-color: transparent;
+  border: 1px solid #dde8d5;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 1rem;
+}
+
+.footerheading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #dde8d5;
+}
+
+.footersubheading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787878;
+}
