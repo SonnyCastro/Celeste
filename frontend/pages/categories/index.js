@@ -53,7 +53,7 @@ export default function Categories({ categories }) {
           <h3 className={styles.name}>{category.name}</h3>
           <h3 className={styles.id}>Cat ID {category.id}</h3>
           <div className={styles.description}><h3>{category.description}</h3></div>
-          <Link href={'/categories/[id]'} as={`/categories/${category.id}`} ><a><button>Go To Assets Page for this category</button></a></Link>
+          <Link href={`/categories/${category.slug}`} ><a><button>Go To Assets Page for this category</button></a></Link>
         </div>
         
         
