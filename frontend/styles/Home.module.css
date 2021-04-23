@@ -18,12 +18,15 @@
 .banner {
   position: relative;
 }
+
 .banner_title {
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
   line-height: 40px;
+  color: #373737;
+  padding-bottom: 1rem;
 }
 
 #web3 {
@@ -36,33 +39,42 @@
 .subtitle {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 15px;
   line-height: 167.5%;
-  /* width: 280px; */
+  /* or 25px */
+  padding-bottom: 1rem;
+  color: #121212;
 }
 
-.behind_btn1 {
+.btn1 {
   background: #dde8d5;
-  width: 104px;
+  width: 7rem;
   height: 30px;
   border: none;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 5px;
   margin: 5px;
-
   outline: none;
 }
 
-.behind_btn2 {
+.btn {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  color: #121212;
+}
+
+.btn2 {
   background: radial-gradient(
     99.99% 514.99% at 100.13% 49.64%,
     #ffe9d5 0%,
     #f8e2ff 0.01%,
     rgb(161, 182, 202) 100%
   );
-  width: 104px;
+  width: 7rem;
   height: 30px;
   margin: 5px;
   padding: 5px;
@@ -91,10 +103,22 @@
   padding-block-start: 3rem;
 }
 
+.toptenheading {
+  padding: 1rem 0;
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    linear-gradient(0deg, #dde8d5, #dde8d5);
+  background-clip: text;
+  color: transparent;
+}
+
 .homeC {
   background-color: black;
   /* padding-bottom: 100px; */
   color: #f2f9ec;
-
   padding-inline: 1.5rem;
 }

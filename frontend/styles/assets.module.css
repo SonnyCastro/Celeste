@@ -1,17 +1,10 @@
-.pageConatiner {
-  height: 250vh;
-  background-color: black;
-  border: 2px solid blue;
-}
-
 .assetConatiner {
   display: grid;
-  margin-top: 200px;
   grid-template-columns: auto auto;
-  gap: 2rem;
+  gap: 0.5rem;
+  padding: 9rem 1.5rem;
   justify-content: center;
-  border: 1px solid white;
-  border-radius: 10px;
+  background-color: black;
 }
 
 .assetCardContainer {
@@ -19,13 +12,13 @@
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  padding: 50px;
-  width: 563.77px;
+  padding: 2rem;
+  /* width: 563.77px; */
   align-items: center;
   height: 216px;
 
   border-radius: 10px;
-  border: 10px solid red;
+
   background: radial-gradient(
       99.99% 514.99% at 100.13% 49.64%,
       #ffe9d5 0%,
@@ -41,6 +34,6 @@
 
 .assetCardHeadingContainer {
   display: flex;
-  width: 500px;
+  /* width: 500px; */
   justify-content: space-between;
 }

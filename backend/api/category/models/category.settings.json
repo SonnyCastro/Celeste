@@ -22,6 +22,9 @@
     "assets": {
       "collection": "asset",
       "via": "category"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

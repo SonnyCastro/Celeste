@@ -2,9 +2,11 @@ import React from 'react'
 import styles from "../../styles/assets.module.css";
 
 export default function Asset({ categoryAssets }) {
+  // console.log(categoryAssets)
   let assets = categoryAssets.assets;
+  console.log(assets)
   return (
-    <div className={styles.pageContainer}>
+  
       <div className={styles.assetConatiner}>
       {assets.map((asset) => {
         return (
@@ -21,7 +23,7 @@ export default function Asset({ categoryAssets }) {
         )
       })}
       </div>
-    </div>
+   
   )
 }
 
@@ -31,7 +33,7 @@ export async function getStaticPaths() {
   const res = await fetch('http://localhost:1337/categories')
   const categories = await res.json()
 
-  // Get the paths we want to pre-render based on posts
+  // Get the paths we want to pre-render based on categories
   const paths = categories.map((category) => ({
     params: { id: category.id},
 
@@ -42,13 +44,14 @@ export async function getStaticPaths() {
   return { paths, fallback: false }
 }
 
+
 // This also gets called at build time
 export async function getStaticProps({ params }) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
   const res = await fetch(`http://localhost:1337/categories/${params.id}`)
   const categoryAssets = await res.json()
-
+  
   // Pass post data to the page via props
   return { props: { categoryAssets } }
 }

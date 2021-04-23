@@ -19,19 +19,17 @@ const Home = ({ topTenDefi }) => {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
           />
-        <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.ico" />
       </Head>
         <div className={styles.banner}>
           <h1 className={styles.banner_title}>Celeste finds the top <span id={styles.web3}>Web3</span> Applications</h1>
           <div className={styles.subtitle}>
             <p>Find your place in the metaverse and discover practical cryptocurrency use cases to earn and save money.</p>
           </div>
-          <div></div>
-          <button className={styles.behind_btn1}>Get Started</button>
-          <div></div>
-          <button className={styles.behind_btn2}>Get Featured</button>
+          <button className={styles.btn1 + " " + styles.btn}>Get Started</button>
+          <button className={styles.btn2 + " " + styles.btn}>Get Featured</button>
         </div>
         
     </header>
@@ -45,7 +43,7 @@ const Home = ({ topTenDefi }) => {
           width={400}
           height={10}
         />
-        <p style={{marginBottom: "25px", marginTop:"15px"}}>Top 10 Most Popular DeFi Assets</p>
+        <p className={styles.toptenheading}>Top 10 Most Popular DeFi Assets</p>
         <DeFiChart topTenDefi={topTenDefi}/>
         <FeaturedPick />
         <CategorySlides />
