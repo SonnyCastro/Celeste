@@ -1,37 +1,45 @@
 .container {
-  /* min-height: 65vh; */
-  padding-inline: 1.5rem;
+  /* padding-left: 1.5rem; */
   height: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background: url("../public/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
   background-attachment: scroll;
-  /* border: 2px solid red; */
 }
 
 .banner {
-  position: relative;
+  padding-inline: 1.5rem;
+  padding-top: 9rem;
+  margin: 0 auto;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* position: relative; */
 }
 
 .banner_title {
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 2.5rem;
+  max-width: 50rem;
   line-height: 40px;
   color: #373737;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
   padding-bottom: 1rem;
 }
 
 #web3 {
-  color: transparent;
-  background-image: linear-gradient(90deg, #fbfcff -30%, #ccdefc 100%);
+  color: #e5afcd;
+  background-image: linear-gradient(90deg, #fbfcff 300%, #ccdefc 100%);
   background-size: 100%;
   background-clip: text;
 }
@@ -39,12 +47,19 @@
 .subtitle {
   font-family: Raleway;
   font-style: normal;
+  font-weight: 500;
+  max-width: 35rem;
+  margin: 1.5rem 0;
+  letter-spacing: 0.06em;
+
+  color: #121212;
+  /* font-family: Raleway;
+  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 167.5%;
-  /* or 25px */
   padding-bottom: 1rem;
-  color: #121212;
+  color: #121212; */
 }
 
 .btn1 {
@@ -84,13 +99,6 @@
   border-radius: 8px;
 }
 
-/* important classname */
-.container2 {
-  height: 100%;
-  color: #f2f9ec;
-  /* padding-inline: 1.5rem; */
-}
-
 .test {
   color: #f2f9ec;
   font-family: Raleway;
@@ -119,6 +127,33 @@
 .homeC {
   background-color: black;
   /* padding-bottom: 100px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
   color: #f2f9ec;
-  padding-inline: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeC {
+    padding-inline: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .homeC {
+    padding-inline: 2rem;
+  }
+  .banner_title {
+    font-family: "Raleway";
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 78px;
+    /* or 82% */
+
+    color: #121212;
+
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  }
 }

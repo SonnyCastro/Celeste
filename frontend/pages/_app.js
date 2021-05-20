@@ -2,7 +2,6 @@
 
 // import App from "next/app";
 import withApollo from "../lib/apollo";
-import React from 'react'
 import Navbar from "../components/Navbar";
 import "../styles/globals.css"
 import Footer from "../components/Footer";

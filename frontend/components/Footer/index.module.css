@@ -1,9 +1,11 @@
 .container {
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
   color: aliceblue;
   width: 100%;
   background-color: black;
-  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  padding-block: 4rem;
 }
 
 .title {
@@ -81,4 +83,8 @@
   font-size: 16px;
   line-height: 19px;
   color: #787878;
+}
+
+.footer {
+  width: 60rem;
 }

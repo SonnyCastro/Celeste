@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .nav {
   display: flex;
   border: none;
-  margin: 0 auto;
-  width: 335px;
-  height: 55px;
+  /* margin: 0 auto; */
+  padding: 0 1rem;
+  /* width: 335px; */
+  /* height: 55px; */
   border-radius: 10px;
   color: black;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .innernav {
@@ -14,9 +16,12 @@
   height: 55px;
   align-items: center;
   border-radius: 10px;
-  justify-content: space-between;
-  width: 335px;
+  justify-content: center;
+  margin: 0 auto;
+
+  /* width: 335px; */
   background: white;
+  margin-bottom: 2rem;
 }
 
 .navitem {
@@ -24,59 +29,49 @@
   width: 100%;
   height: 100%;
   border: none;
+  border-radius: 0.7rem;
   background-color: white;
   font-size: 20px;
   outline: none;
 }
 
-#btnControl {
-  display: none;
-}
-
-#click {
-  background: radial-gradient(
-    99.99% 514.99% at 100.13% 49.64%,
-    #ffe9d5 0%,
-    #f8e2ff 0.01%,
-    rgb(161, 182, 202) 100%
-  ) !important;
-  border-radius: 9px;
-  width: 100%;
-  height: 3.4375rem;
-}
-
-/* .nav_toggle:checked ~ .navbar__menu { */
-#btnControl:checked ~ .navitem {
-  background-color: radial-gradient(
-    99.99% 514.99% at 100.13% 49.64%,
-    #ffe9d5 0%,
-    #f8e2ff 0.01%,
-    rgb(161, 182, 202) 100%
-  );
-  /* border-radius: 9px; */
-  /* width: 100%; */
-  /* height: 3.4375rem; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .navitem:active {
+.navitem:focus-within {
   background: radial-gradient(
     99.99% 514.99% at 100.13% 49.64%,
     #ffe9d5 0%,
     #f8e2ff 0.01%,
     rgb(161, 182, 202) 100%
   );
-} */
+  border-radius: 10px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.blue {
+  background-color: blue;
+  /* height: 20vh; */
+}
+
+.red {
+  background-color: red;
+}
 
 .navitemtext {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
+/* #tester {
+  border-radius: 10px;
+} */
+
+/* category cards below */
 .item {
   background: #e2e2e2;
   border-radius: 10px;
@@ -94,6 +89,7 @@
   text-align: center;
   background-color: black;
   color: white;
+  padding-bottom: 5rem;
 }
 
 .id {
@@ -124,15 +120,16 @@
   /* width: auto; */
   font-family: Raleway;
   font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 23px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  max-width: 280px;
 }
 
 .container {
   display: grid;
-  height: 100vh;
   justify-content: center;
   padding: 0 1rem;
+  gap: 2rem;
   grid-template-columns: auto;
 }
