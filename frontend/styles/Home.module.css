@@ -1,31 +1,26 @@
 .container {
   /* padding-left: 1.5rem; */
-  height: 500px;
-  width: 100%;
+  min-height: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background: url("../public/hero.png");
+  background-image: url("../public/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
-  background-attachment: scroll;
+  background-attachment: local;
 }
 
 .banner {
   padding-inline: 1.5rem;
   padding-top: 9rem;
   margin: 0 auto;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* position: relative; */
 }
 
 .banner_title {
-  font-family: Raleway;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 2.5rem;
@@ -51,21 +46,15 @@
   max-width: 35rem;
   margin: 1.5rem 0;
   letter-spacing: 0.06em;
-
   color: #121212;
-  /* font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 167.5%;
-  padding-bottom: 1rem;
-  color: #121212; */
+}
+
+.btnContainer {
+  margin-bottom: 4rem;
 }
 
 .btn1 {
   background: #dde8d5;
-  width: 7rem;
-  height: 30px;
   border: none;
   box-sizing: border-box;
   border-radius: 8px;
@@ -80,6 +69,7 @@
   font-weight: 600;
   line-height: 19px;
   color: #121212;
+  font-size: 18px;
 }
 
 .btn2 {
@@ -89,7 +79,7 @@
     #f8e2ff 0.01%,
     rgb(161, 182, 202) 100%
   );
-  width: 7rem;
+  width: 8rem;
   height: 30px;
   margin: 5px;
   padding: 5px;

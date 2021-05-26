@@ -17,7 +17,8 @@
 .art {
   background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
     #9f99e0;
-  border-radius: 4px;
+  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
@@ -29,7 +30,8 @@
 .social {
   background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
     #79bfff;
-  border-radius: 4px;
+  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
@@ -41,7 +43,8 @@
 .trade {
   background: linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0) 100%),
     #d7d4f7;
-  border-radius: 4px;
+  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   padding-left: 1rem;

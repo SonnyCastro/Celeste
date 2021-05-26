@@ -33,15 +33,18 @@ const Home = ({ topTenDefi }) => {
               cryptocurrency use cases to earn and save money.
             </p>
           </div>
-          {/* <button className={styles.btn1 + " " + styles.btn}>Get Started</button> */}
-          <Link href="/categories">
-            <a className={styles.btn1 + " " + styles.btn}>Get Started</a>
-          </Link>
-          <button className={styles.btn2 + " " + styles.btn}>
-            Get Featured
-          </button>
+
+          <div className={styles.btnContainer}>
+            <Link href="/categories">
+              <a className={styles.btn1 + " " + styles.btn}>Get Started</a>
+            </Link>
+            <button className={styles.btn2 + " " + styles.btn}>
+              Get Featured
+            </button>
+          </div>
         </div>
       </header>
+
       {/* home content */}
       <div className={styles.homeC}>
         <div>
