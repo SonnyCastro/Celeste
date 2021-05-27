@@ -7,7 +7,12 @@ const index = ({ topTenDefi }) => {
     <div>
       {topTenDefi?.map((defi) => {
         return (
-          <div className={styles.defiContainer} id={defi.id} key={defi.id}>
+          <div
+            className={styles.defiContainer}
+            id={defi.id}
+            key={defi.id}
+            style={{ margin: ".5rem" }}
+          >
             <div>
               <Image
                 className={styles.defiImg}
