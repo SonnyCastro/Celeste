@@ -61,7 +61,15 @@ const Home = ({ topTenDefi }) => {
           </p>
           <DeFiChart topTenDefi={topTenDefi} />
           <FeaturedPick />
-          <CategorySlides />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <CategorySlides />
+          </div>
           <Tweets />
           <UpcomingEvents />
         </div>
