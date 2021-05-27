@@ -23,7 +23,7 @@ const Home = ({ topTenDefi }) => {
       </Head>
       <section
         id={styles.header}
-        style={{ backgroundColor: "black", padding: "1rem" }}
+        style={{ backgroundColor: "black", paddingLeft: ".5rem" }}
       >
         <div className={styles.banner}>
           <h1 id={styles.banner_title}>
