@@ -1,5 +1,5 @@
 .container {
-  background-color: black;
+  background-color: black !important;
   display: flex;
   justify-content: center;
   padding-inline: 2rem;
