@@ -23,7 +23,7 @@ const Home = ({ topTenDefi }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.banner}>
-          <h1 className={styles.banner_title}>
+          <h1 id={styles.banner_title}>
             Celeste finds the top <span id={styles.web3}>Web3</span>{" "}
             Applications
           </h1>
@@ -36,11 +36,11 @@ const Home = ({ topTenDefi }) => {
 
           <div className={styles.btnContainer}>
             <Link href="/categories">
-              <a className={styles.btn1 + " " + styles.btn}>Get Started</a>
+              <a className={styles.btn1}>Get Started</a>
             </Link>
-            <button className={styles.btn2 + " " + styles.btn}>
-              Get Featured
-            </button>
+            <Link href="#">
+              <a className={styles.btn2}>Get Featured</a>
+            </Link>
           </div>
         </div>
       </header>

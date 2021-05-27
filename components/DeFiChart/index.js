@@ -5,7 +5,7 @@ import Image from "next/image";
 const index = ({ topTenDefi }) => {
   return (
     <div>
-      {topTenDefi.map((defi) => {
+      {topTenDefi?.map((defi) => {
         return (
           <div className={styles.defiContainer} id={defi.id} key={defi.id}>
             <div>

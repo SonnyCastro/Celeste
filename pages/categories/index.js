@@ -27,7 +27,7 @@ export default function Categories({ categories }) {
             </div>
           </label>
           <input type="checkbox" id={styles.btnControl}/> */}
-          {categoryList.map((category) => {
+          {categoryList?.map((category) => {
             return (
               <button className={styles.navitem}>
                 <p className={styles.navitemtext}>{category}</p>
@@ -61,7 +61,9 @@ export default function Categories({ categories }) {
 // export default Categories;
 
 export async function getStaticProps() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
+  const API_URL =
+    process.env.NEXT_PUBLIC_API_URL ||
+    "https://blooming-plateau-28061.herokuapp.com";
   const client = new ApolloClient({
     uri: `${API_URL}/graphql`,
     cache: new InMemoryCache(),
