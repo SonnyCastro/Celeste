@@ -21,7 +21,10 @@ const Home = ({ topTenDefi }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section id={styles.header}>
+      <section
+        id={styles.header}
+        styles={{ backgroundColor: "black", padding: "1.5rem" }}
+      >
         <div className={styles.banner}>
           <h1 id={styles.banner_title}>
             Celeste finds the top <span id={styles.web3}>Web3</span>{" "}
