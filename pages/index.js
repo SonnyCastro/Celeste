@@ -21,7 +21,10 @@ const Home = ({ topTenDefi }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section id={styles.header} style={{ backgroundColor: "black" }}>
+      <section
+        id={styles.header}
+        style={{ backgroundColor: "black", paddingLeft: "1rem" }}
+      >
         <div className={styles.banner}>
           <h1 id={styles.banner_title}>
             Celeste finds the top <span id={styles.web3}>Web3</span>{" "}
@@ -62,7 +65,7 @@ const Home = ({ topTenDefi }) => {
           <DeFiChart topTenDefi={topTenDefi} />
           <FeaturedPick />
           <CategorySlides />
-          {/* <Tweets /> */}
+          <Tweets />
           <UpcomingEvents />
         </div>
       </div>
