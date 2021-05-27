@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 700px) {
   .center {
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
   }
