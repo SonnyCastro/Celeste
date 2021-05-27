@@ -11,17 +11,17 @@ import Tweets from "../components/Tweets";
 const Home = ({ topTenDefi }) => {
   return (
     <>
+      <Head>
+        <title>Celeste</title>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+          crossOrigin="anonymous"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <header id={styles.container}>
-        <Head>
-          <title>Celeste</title>
-          <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-            crossOrigin="anonymous"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
         <div className={styles.banner}>
           <h1 id={styles.banner_title}>
             Celeste finds the top <span id={styles.web3}>Web3</span>{" "}

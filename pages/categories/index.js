@@ -37,7 +37,7 @@ export default function Categories({ categories }) {
         </div>
       </div>
       <div className={styles.container}>
-        {categories.map((category) => (
+        {categories?.map((category) => (
           <div className={styles.item} key={category.id}>
             <h3 className={styles.name}>{category.name}</h3>
             <div className={styles.description}>
