@@ -11,7 +11,7 @@ import Tweets from "../components/Tweets";
 const Home = ({ topTenDefi }) => {
   return (
     <>
-      <header className={styles.container}>
+      <header id={styles.container}>
         <Head>
           <title>Celeste</title>
           <link
