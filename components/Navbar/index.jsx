@@ -1,68 +1,117 @@
-import React from 'react'
-import styles from "./index.module.scss"
+import React from "react";
+import styles from "./index.module.scss";
 import Link from "next/link";
-import Image from 'next/image';
-import { CgSearch } from 'react-icons/cg'
+import { useState } from "react";
+import Image from "next/image";
+// import { CgSearch } from "react-icons/cg";
 // import greenlogo from "../../public/greenlogo2.png";
 
 const index = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const openMenu = () => setIsOpen(!isOpen);
   return (
-   <>
-     <nav className={styles.navbar}>
-       <Link href="/">
-         <a className={styles.navbar__logo}>
-          <Image 
-            src="/greenlogo2.png"
-            alt="logo"
-            width={60}
-            height={60}
-          />
-         </a>
-       </Link>
-       <input type="checkbox" id={styles.nav_toggle} className={styles.nav_toggle}/>
-       <label htmlFor={styles.nav_toggle} className={styles.navbar__bars}>
-       <span><i className="fas fa-bars"></i></span>
-       </label>
-       {/* <div className={styles.navbar__bars}><i className="fas fa-bars"></i></div> */}
-       <ul className={styles.navbar__menu}>
-         <li><Link href="/categories"><a className={styles.navbar__menu__links}>Apps</a></Link></li>
-         <li><Link href="#"><a className={styles.navbar__menu__links}>Creators</a></Link></li>
-         <li><Link href="#"><a className={styles.navbar__menu__links}>Blog</a></Link></li>
-         <li><Link href="#"><a className={styles.navbar__menu__links}>News</a></Link></li>
-         <li><Link href="#"><a className={styles.navbar__menu__links}>Tutorials</a></Link></li>
-         <li><CgSearch className={styles.searchIcon}/></li>
-       </ul>
-     </nav>
-   </>
-  )
-}
+    <>
+      <header className={styles.header}>
+        <nav className={styles.navbar}>
+          <Link href="/">
+            <a className={styles.navlogo}>
+              <Image src="/celeste.png" width={40} height={40} />
+            </a>
+          </Link>
+          <ul
+            className={
+              isOpen === false
+                ? styles.navmenu
+                : styles.navmenu + " " + styles.active
+            }
+          >
+            <li className={styles.navitem}>
+              <Link href="/categories">
+                <a
+                  className={
+                    isOpen === false
+                      ? styles.navlink
+                      : styles.navlink + " " + styles.active
+                  }
+                  onClick={openMenu}
+                >
+                  Apps
+                </a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="/#">
+                <a
+                  className={
+                    isOpen === false
+                      ? styles.navlink
+                      : styles.navlink + " " + styles.active
+                  }
+                  onClick={openMenu}
+                >
+                  Creators
+                </a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="/#">
+                <a
+                  className={
+                    isOpen === false
+                      ? styles.navlink
+                      : styles.navlink + " " + styles.active
+                  }
+                  onClick={openMenu}
+                >
+                  Blog
+                </a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="/#">
+                <a
+                  className={
+                    isOpen === false
+                      ? styles.navlink
+                      : styles.navlink + " " + styles.active
+                  }
+                  onClick={openMenu}
+                >
+                  News
+                </a>
+              </Link>
+            </li>
+            <li className={styles.navitem}>
+              <Link href="/#">
+                <a
+                  className={
+                    isOpen === false
+                      ? styles.navlink
+                      : styles.navlink + " " + styles.active
+                  }
+                  onClick={openMenu}
+                >
+                  Tutorials
+                </a>
+              </Link>
+            </li>
+          </ul>
+          <button
+            className={
+              isOpen === false
+                ? styles.hamburger
+                : styles.hamburger + " " + styles.active
+            }
+            onClick={openMenu}
+          >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </button>
+        </nav>
+      </header>
+    </>
+  );
+};
 
 export default index;
-
- // <div>
-    //   <nav id={styles.nav}>
-    // <div className={styles.logo}>
-    // <Link href="/">
-    //   <a>
-    //     <Image 
-    //       src="/greenlogo2.png"
-    //       alt="logo"
-    //       width={60}
-    //       height={60}
-    //     />
-    //   </a>
-    // </Link>
-    // </div>
-    // <div className={styles.menu_container}>
-    // <ul className={styles.navlinks}>
-    //     <li><Link href="/categories"><a>Apps</a></Link></li>
-    //     <li><Link href="#"><a>Creators</a></Link></li>
-    //     <li><Link href="#"><a>Blog</a></Link></li>
-    //     <li><Link href="#"><a>News</a></Link></li>
-    //     <li><Link href="#"><a>Tutorials</a></Link></li>
-    //     <li><span><div className={styles.searchBar}><button className={styles.searchBarSubmit} aria-label='submit search'><CgSearch id={styles.svg} /></button>
-    //     <input type='text' class={styles.searchBarInput} aria-label='search'/></div></span></li>
-    // </ul>
-    // </div>
-    // </nav>
-    // </div>

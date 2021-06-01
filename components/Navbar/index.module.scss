@@ -1,89 +1,211 @@
 @import "../../styles/media-queries";
-
-%align-center {
-  display: flex;
-  align-items: center;
-}
-
-#nav_toggle {
-  display: none;
-}
-
-.nav_toggle:checked ~ .navbar__menu {
-  display: block;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 100%;
-  right: 0px;
-  background-color: black;
-  .navbar__menu__links {
-    padding-block: 0.5rem;
-  }
+.header {
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .navbar {
-  height: 80px;
   display: flex;
   justify-content: space-between;
-  // padding: 0.5rem calc((100vw - 100vw) / 2);
-  padding: 0.5rem 0.5rem;
-  z-index: 10;
-  position: fixed;
-  width: 100%;
+  align-items: center;
+  padding: 1rem 2rem;
   background-color: black;
   color: white;
-  @extend %align-center;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 32px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.navmenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+
+  /* padding-right: 2rem; */
+}
+
+.navitem {
+  margin-left: 5rem;
+}
+
+.navlink {
+  /* font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase; */
+  font-family: "DM Sans", sans-serif;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 120%;
+  /* or 25px */
+
+  letter-spacing: -0.03em;
+
+  /* Main Black */
+
+  color: white;
+}
+
+.navlink:hover {
+  color: grey;
+}
+
+.navlogo {
   font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
 
-  &__logo {
-    cursor: pointer;
-    width: 42.33px;
-    margin-left: 24px;
-    @extend %align-center;
+@media only screen and (max-width: 768px) {
+  .navbar {
+    position: fixed;
   }
 
-  &__bars {
-    opacity: 0;
-    position: relative;
-    @include tablet {
-      opacity: 1;
-      position: absolute;
-      top: 22px;
-      right: 20px;
-      font-size: 2rem;
-    }
-  }
+  .navmenu {
+    position: fixed;
 
-  &__menu {
-    @extend %align-center;
-    list-style: none;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
     text-align: center;
-    margin-right: 24px;
-    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
 
-    @include tablet {
-      display: none;
-    }
+  .navmenu.active {
+    left: 0;
+  }
 
-    &__links {
-      @extend%align-center;
-      justify-content: center;
-      text-decoration: none;
-      padding: 0 1rem;
+  .navitem {
+    margin: 2.5rem 0;
+  }
 
-      &:hover {
-        color: grey;
-        transition: all 0.3s ease;
-      }
-    }
+  .hamburger {
+    position: fixed;
+    right: 1rem;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    // color: white;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
-.searchIcon {
-  margin-top: 5px;
-  &:hover {
-    color: grey;
-    transition: all 0.3s ease;
-  }
-}
+// %align-center {
+//   display: flex;
+//   align-items: center;
+// }
+
+// #nav_toggle {
+//   display: none;
+// }
+
+// .nav_toggle:checked ~ .navbar__menu {
+//   display: block;
+//   position: absolute;
+//   margin: 0;
+//   padding: 0;
+//   top: 100%;
+//   right: 0px;
+//   background-color: black;
+//   .navbar__menu__links {
+//     padding-block: 0.5rem;
+//   }
+// }
+
+// .navbar {
+//   height: 80px;
+//   display: flex;
+//   justify-content: space-between;
+//   // padding: 0.5rem calc((100vw - 100vw) / 2);
+//   padding: 0.5rem 0.5rem;
+//   z-index: 10;
+//   position: fixed;
+//   width: 100%;
+//   background-color: black;
+//   color: white;
+//   @extend %align-center;
+//   font-size: 1.5rem;
+
+//   &__logo {
+//     cursor: pointer;
+//     width: 42.33px;
+//     margin-left: 24px;
+//     @extend %align-center;
+//   }
+
+//   &__bars {
+//     opacity: 0;
+//     position: relative;
+//     @include tablet {
+//       opacity: 1;
+//       position: absolute;
+//       top: 22px;
+//       right: 20px;
+//       font-size: 2rem;
+//     }
+//   }
+
+//   &__menu {
+//     @extend %align-center;
+//     list-style: none;
+//     text-align: center;
+//     margin-right: 24px;
+//     text-decoration: none;
+
+//     @include tablet {
+//       display: none;
+//     }
+
+//     &__links {
+//       @extend%align-center;
+//       justify-content: center;
+//       text-decoration: none;
+//       padding: 0 1rem;
+
+//       &:hover {
+//         color: grey;
+//         transition: all 0.3s ease;
+//       }
+//     }
+//   }
+// }
+
+// .searchIcon {
+//   margin-top: 5px;
+//   &:hover {
+//     color: grey;
+//     transition: all 0.3s ease;
+//   }
+// }
