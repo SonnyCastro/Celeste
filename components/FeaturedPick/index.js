@@ -11,7 +11,7 @@ function FeaturedPick() {
         alt="logo"
         width={100}
         layout="responsive"
-        height={10}
+        height={5}
       />
       <section className={styles.sectionContainer}>
         <div className={styles.content_container}>

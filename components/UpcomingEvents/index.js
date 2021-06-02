@@ -9,9 +9,9 @@ function UpcomingEvents() {
       <Image
         src="/line.svg"
         alt="logo"
-        width={100}
-        height={10}
         layout="responsive"
+        width={100}
+        height={5}
       />
 
       <div className={styles.a}>

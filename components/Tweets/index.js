@@ -13,9 +13,9 @@ function Tweets() {
       <Image
         src="/line.svg"
         alt="logo"
-        width={100}
-        height={10}
         layout="responsive"
+        width={100}
+        height={5}
       />
       {/* <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" options={{width: 400}} /> */}
       <div className={styles.center}>

@@ -21,10 +21,7 @@ const Home = ({ topTenDefi }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section
-        id={styles.header}
-        style={{ backgroundColor: "black", paddingLeft: "1rem" }}
-      >
+      <section id={styles.header}>
         <div className={styles.banner}>
           <h1 id={styles.banner_title}>
             Celeste finds the top <span id={styles.web3}>Web3</span>{" "}
@@ -47,7 +44,6 @@ const Home = ({ topTenDefi }) => {
           </div>
         </div>
       </section>
-
       {/* home content */}
       <div className={styles.homeC}>
         <div>
