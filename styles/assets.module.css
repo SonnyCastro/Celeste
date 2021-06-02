@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: 100vh;
   background-color: black;
   padding: 9rem 1rem;
 }
