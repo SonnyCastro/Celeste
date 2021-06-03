@@ -124,6 +124,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  #header {
+    padding: 0 1.5rem;
+  }
   .homeC {
     padding-inline: 1.5rem;
   }
