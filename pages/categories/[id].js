@@ -14,7 +14,7 @@ export default function Asset({ categoryAssets }) {
             <div key={asset.name} className={styles.assetCardContainer}>
               <div className={styles.assetCardHeadingContainer}>
                 <h1>{asset.name}</h1>
-                {/* <img src={asset.logo.url} alt="img" /> */}
+                <img src={asset.logo.url} alt="img" />
               </div>
 
               <div id={styles.test}>
