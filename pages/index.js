@@ -46,7 +46,7 @@ const Home = ({ topTenDefi }) => {
       </section>
       {/* home content */}
       <div className={styles.homeC}>
-        <div style={{ padding: "0 1rem" }}>
+        <div style={{ padding: "0 1.5rem" }}>
           <h1 className={styles.test}>Check Price In Real Time</h1>
           <Image
             src="/line.svg"
