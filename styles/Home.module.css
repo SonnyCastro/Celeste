@@ -129,9 +129,6 @@
   }
   .homeC {
     padding-inline: 1.5rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
   }
   #banner_title {
     font-family: "Raleway";
