@@ -3,10 +3,11 @@ import styles from "../../styles/assets.module.css";
 // import { getServerSideProps } from "./Asset/[name]";
 import Link from "next/link";
 
-export default function Assets({ categoryAssets }) {
+export default function Assets({ categoryAssets, slug }) {
   // console.log(categoryAssets.assets);
   let assets = categoryAssets.assets;
   // console.log(assets);
+  // console.log(slug);
 
   return (
     <div className={styles.pageContainer}>
@@ -27,11 +28,11 @@ export default function Assets({ categoryAssets }) {
                 <p>{asset.description}</p>
               </div>
 
-              {/* <Link href={`.../asset/${asset.name}`}>
+              <Link href={`/categories/asset/${asset.id}`}>
                 <a style={{ marginBlock: "1rem", color: "blue" }}>
                   Go to Asset
                 </a>
-              </Link> */}
+              </Link>
             </div>
           );
         })}
@@ -64,8 +65,11 @@ export async function getStaticProps({ params }) {
     `https://blooming-plateau-28061.herokuapp.com/categories?slug=${params.slug}`
   );
   const data = await res.json();
+  console.log(data);
+  // console.log(data[0]);
+  console.log(`${params.slug}`);
 
   return {
-    props: { categoryAssets: data[0] },
+    props: { categoryAssets: data[0], slug: params.slug },
   };
 }

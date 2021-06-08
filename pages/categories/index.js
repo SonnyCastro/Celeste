@@ -78,6 +78,7 @@ export async function getStaticProps() {
   return {
     props: {
       categories: data.categories,
+      slug: data.categories.slug || null,
     },
   };
 }
