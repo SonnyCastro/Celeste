@@ -1,16 +1,9 @@
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .assetConatiner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
   background-color: black;
-  padding: 9rem 1rem;
+  padding: 9rem 0.5rem;
 }
 
 .assetCardContainer {
@@ -20,6 +13,7 @@
   align-items: center;
   text-align: center;
   padding: 1.5rem;
+  margin: 0.5rem;
   max-width: 563.77px;
   align-items: center;
   /* height: 216px; */

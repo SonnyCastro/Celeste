@@ -18,7 +18,7 @@ function Tweets() {
         height={5}
       />
       {/* <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" options={{width: 400}} /> */}
-      <div className={styles.center} style={{ border: "1px solid red" }}>
+      <div className={styles.center}>
         <TwitterTweetEmbed
           sourceType="profile"
           tweetId="1370142150449639432"
