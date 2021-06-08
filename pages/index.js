@@ -46,24 +46,22 @@ const Home = ({ topTenDefi }) => {
       </section>
       {/* home content */}
       <div className={styles.homeC}>
-        <div>
-          <h1 className={styles.test}>Check Price In Real Time</h1>
-          <Image
-            src="/line.svg"
-            alt="logo"
-            width={100}
-            layout="responsive"
-            height={5}
-          />
-          <p className={styles.toptenheading}>
-            Top 10 Most Popular DeFi Assets
-          </p>
-          <DeFiChart topTenDefi={topTenDefi} />
-          <FeaturedPick />
-          <CategorySlides />
-          <Tweets />
-          <UpcomingEvents />
-        </div>
+        {/* <div> */}
+        <h1 className={styles.test}>Check Price In Real Time</h1>
+        <Image
+          src="/line.svg"
+          alt="logo"
+          width={100}
+          layout="responsive"
+          height={5}
+        />
+        <p className={styles.toptenheading}>Top 10 Most Popular DeFi Assets</p>
+        <DeFiChart topTenDefi={topTenDefi} />
+        <FeaturedPick />
+        <CategorySlides />
+        <Tweets />
+        <UpcomingEvents />
+        {/* </div> */}
       </div>
     </>
   );

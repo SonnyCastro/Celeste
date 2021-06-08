@@ -4,9 +4,9 @@ import styles from "../../styles/assets.module.css";
 import Link from "next/link";
 
 export default function Assets({ categoryAssets }) {
-  console.log(categoryAssets.assets);
+  // console.log(categoryAssets.assets);
   let assets = categoryAssets.assets;
-  console.log(assets);
+  // console.log(assets);
 
   return (
     <div className={styles.pageContainer}>
