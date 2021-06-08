@@ -118,7 +118,10 @@
 .homeC {
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
   width: 100%;
   color: #f2f9ec;
 }
@@ -128,7 +131,7 @@
     padding: 0 1.5rem;
   }
   .homeC {
-    padding-inline: 1.5rem;
+    padding: 0 1.5rem;
   }
   #banner_title {
     font-family: "Raleway";
