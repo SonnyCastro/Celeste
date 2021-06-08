@@ -11,7 +11,7 @@ const index = ({ topTenDefi }) => {
             className={styles.defiContainer}
             id={defi.id}
             key={defi.id}
-            // style={{ margin: ".5rem" }}
+            style={{ margin: ".5rem" }}
           >
             <div>
               <Image
