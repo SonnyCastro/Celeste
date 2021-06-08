@@ -1,32 +1,22 @@
 import React, { useState } from "react";
 import CategoryList from "../../components/CategoryList";
-import { useQuery } from "@apollo/react-hooks";
+// import { useQuery } from "@apollo/react-hooks";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import styles from "../../styles/Categories.module.css";
 import gql from "graphql-tag";
 import Link from "next/link";
 
-// import Navbar from "../../components/Navbar";
 export default function Categories({ categories }) {
   const [click, setClick] = useState(false);
   // const { loading, error, data } = useQuery(QUERY);
 
   console.log(categories);
   let categoryList = ["DeFi", "Art", "Trade", "Gaming"];
-  // console.log(data.categories[0].name)
-  // let categories = data.categories;
-  // console.log(data)
+
   return (
     <div className={styles.testing}>
       <div className={styles.nav}>
         <div className={styles.innernav}>
-          {/* <input type="checkbox" id={styles.btnControl}/>
-          <label className={styles.btnControl + " " + styles.navitem1} for={styles.btnControl}>
-            <div className={styles.navitem + " " + styles.navitem1}>
-              <p className={styles.navitemtext}>DeFi</p>
-            </div>
-          </label>
-          <input type="checkbox" id={styles.btnControl}/> */}
           {categoryList?.map((category) => {
             return (
               <button className={styles.navitem}>
@@ -43,7 +33,7 @@ export default function Categories({ categories }) {
             <div className={styles.description}>
               <h3>{category.description}</h3>
             </div>
-            <Link href={`/categories/${category.id}`}>
+            <Link href={`/categories/${category.slug}`}>
               <a>
                 <button style={{ margin: "1rem" }}>
                   Go To Assets Page for this category
@@ -57,8 +47,6 @@ export default function Categories({ categories }) {
     </div>
   );
 }
-
-// export default Categories;
 
 export async function getStaticProps() {
   const API_URL =
