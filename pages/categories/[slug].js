@@ -28,7 +28,7 @@ export default function Assets({ categoryAssets, slug }) {
                 <p>{asset.description}</p>
               </div>
 
-              <Link href={`/categories/asset/${asset.id}`}>
+              <Link href={`/categories/asset/${asset.name}`}>
                 <a style={{ marginBlock: "1rem", color: "blue" }}>
                   Go to Asset
                 </a>

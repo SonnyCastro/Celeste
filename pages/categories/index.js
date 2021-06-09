@@ -5,7 +5,7 @@ import { ApolloClient, InMemoryCache } from "@apollo/client";
 import styles from "../../styles/Categories.module.css";
 import gql from "graphql-tag";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Categories({ categories }) {
   const [click, setClick] = useState(false);
   // const { loading, error, data } = useQuery(QUERY);
@@ -26,6 +26,36 @@ export default function Categories({ categories }) {
           })}
         </div>
       </div>
+      <div className={styles.header}>
+        <h2
+          className={styles.headerTitle}
+          style={{ margin: "0%", padding: "0%", textAlign: "left" }}
+        >
+          Explore the Metaverse ☽
+        </h2>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "50px",
+            maxWidth: "1060px",
+          }}
+        >
+          <Image
+            alt="breakline"
+            src="/line.svg"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <p className={styles.headerText}>
+          Celeste is your portal to the crypto metaverse. As the metaverse
+          expands, it becomes harder to find apps you can benefit from. We
+          research, test and evaluate blockchain applications in order to curate
+          a list of high quality products that we believe you can gain from.
+          Join our community.
+        </p>
+      </div>
       <div className={styles.container}>
         {categories?.map((category) => (
           <div className={styles.item} key={category.id}>
@@ -33,13 +63,11 @@ export default function Categories({ categories }) {
             <div className={styles.description}>
               <h3>{category.description}</h3>
             </div>
-            <Link href={`/categories/${category.slug}`}>
-              <a>
-                <button style={{ margin: "1rem" }}>
-                  Go To Assets Page for this category
-                </button>
-              </a>
-            </Link>
+            <div className={styles.viewAppContainer}>
+              <Link href={`/categories/${category.slug}`}>
+                <a className={styles.viewApps}>View Apps</a>
+              </Link>
+            </div>
           </div>
         ))}
       </div>

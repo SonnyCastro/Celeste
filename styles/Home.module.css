@@ -129,7 +129,7 @@
   #header {
     padding: 0 1.5rem;
   }
-  .homeC {
+  .actualConatiner {
     padding: 0 1.5rem;
   }
   #banner_title {
@@ -150,11 +150,11 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .homeC {
-    padding-inline: 2rem;
+    border: 2px solid red;
   }
-}
+} */
 
 @media only screen and (max-width: 498px) {
   .btnContainer {
