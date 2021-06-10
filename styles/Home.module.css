@@ -133,13 +133,11 @@
   #header {
     padding: 0 1.5rem;
   }
-  .homeC {
-    padding-inline: 1.5rem;
-  }
 
-  /* .actualConatiner {
+  .actualConatiner {
     padding-inline: 1.5rem;
-  } */
+    border: 2px solid yellow;
+  }
   #banner_title {
     font-family: "Raleway";
     font-style: normal;
