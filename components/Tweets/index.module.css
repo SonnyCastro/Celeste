@@ -20,6 +20,9 @@
   /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* .center * {
@@ -33,6 +36,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
     margin: 0 auto;
   }
 }
