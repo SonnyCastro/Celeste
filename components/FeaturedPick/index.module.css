@@ -1,13 +1,5 @@
 .pickOfDay {
-  background: radial-gradient(
-      99.99% 514.99% at 100.13% 49.64%,
-      #ffe9d5 0%,
-      #f8e2ff 0.01%,
-      rgba(7, 100, 240, 0) 100%
-    ),
-    linear-gradient(0deg, #dde8d5, #dde8d5);
-  background-clip: text;
-  color: transparent;
+  color: #e4ebdf;
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
@@ -116,6 +108,7 @@
   .sectionContainer {
     display: flex;
     justify-content: center;
+    border: 2px solid yellow;
   }
 
   .content_container {
@@ -126,5 +119,11 @@
     background: url("../../public/featured.png");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pickOfDay {
+    color: #e4ebdf;
   }
 }
