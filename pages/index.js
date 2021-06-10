@@ -62,7 +62,7 @@ const Home = ({ topTenDefi }) => {
           <DeFiChart topTenDefi={topTenDefi} />
           <FeaturedPick />
           <CategorySlides />
-          {/* <Tweets /> */}
+          <Tweets />
           <UpcomingEvents />
         </div>
       </div>

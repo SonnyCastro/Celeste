@@ -55,14 +55,12 @@
 .innerb2 {
   background-color: #20242e;
   border-radius: 0px 0px 35px 35px;
-  /* width: 100%; */
-  /* max-width: 450px; */
   height: 200px;
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .innerb2Title {
@@ -86,7 +84,6 @@
   display: flex;
   width: 182.87px;
   height: 34.4px;
-  margin-left: 1rem;
   justify-content: center;
   background: radial-gradient(
       99.99% 514.99% at 100.13% 49.64%,

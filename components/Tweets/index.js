@@ -22,17 +22,18 @@ function Tweets() {
         <TwitterTweetEmbed
           sourceType="profile"
           tweetId="1370142150449639432"
-          // options={{ width: 250 }}
+          // options={{ width: 0, height: 400 }}
+        />
+
+        <TwitterTweetEmbed
+          sourceType="profile"
+          tweetId="1370142150449639432"
+          // options={{ width: 0, height: 400 }}
         />
         <TwitterTweetEmbed
           sourceType="profile"
           tweetId="1370142150449639432"
-          // options={{ width: 250 }}
-        />
-        <TwitterTweetEmbed
-          sourceType="profile"
-          tweetId="1370142150449639432"
-          // options={{ width: 250 }}
+          // options={{ width: 0, height: 400 }}
         />
       </div>
     </div>
