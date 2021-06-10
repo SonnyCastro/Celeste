@@ -102,9 +102,11 @@
   .a {
     flex-direction: row;
     justify-content: space-evenly;
+    border: 1px solid red;
   }
 
   .b {
     max-width: 450px;
+    border: 1px solid red;
   }
 }
