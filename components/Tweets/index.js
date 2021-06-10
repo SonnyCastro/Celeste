@@ -19,24 +19,9 @@ function Tweets() {
       />
       {/* <TwitterTweetEmbed sourceType="profile" tweetId="1384194944651337728" options={{width: 400}} /> */}
       <div className={styles.center}>
-        <div>
-          <TwitterTweetEmbed
-            sourceType="profile"
-            tweetId="1370142150449639432"
-          />
-        </div>
-        <div>
-          <TwitterTweetEmbed
-            sourceType="profile"
-            tweetId="1370142150449639432"
-          />
-        </div>
-        <div>
-          <TwitterTweetEmbed
-            sourceType="profile"
-            tweetId="1370142150449639432"
-          />
-        </div>
+        <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
+        <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
+        <TwitterTweetEmbed sourceType="profile" tweetId="1370142150449639432" />
       </div>
     </div>
   );
