@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function Tweets() {
   return (
-    <div>
+    <div id={styles.tweetsC}>
       <h1 className={styles.test}>Crypto Twitter</h1>
       <Image
         src="/line.svg"

@@ -1,5 +1,5 @@
-import styles from "./index.module.css"
-import Link from "next/link"
+import styles from "./index.module.css";
+import Link from "next/link";
 
 function CategorySlides() {
   return (
@@ -39,9 +39,11 @@ function CategorySlides() {
           </div>
         </a>
       </Link>
-      <Link href="/categories"><a className={styles.link}>View Categories</a></Link>
-     </>
-  )
+      <Link href="/categories">
+        <a className={styles.link}>View Categories</a>
+      </Link>
+    </>
+  );
 }
 
-export default CategorySlides
+export default CategorySlides;

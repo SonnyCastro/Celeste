@@ -1,3 +1,9 @@
+#tweetsC {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .test {
   color: #f2f9ec;
   font-family: Raleway;
@@ -13,6 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
 /* .center * {
@@ -24,5 +31,6 @@
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    /* border: 1px solid red; */
   }
 }

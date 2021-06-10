@@ -17,20 +17,11 @@
   margin-bottom: 3rem;
   align-items: center;
 }
-@media screen and (min-width: 600px) {
-  .a {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .b {
-    max-width: 450px;
-  }
-}
 
 .b {
   margin-top: 1rem;
-  max-width: 320px;
+  /* max-width: 320px; */
+  width: 355px;
   height: 100%;
   margin-bottom: 1rem;
   border-radius: 35px;
@@ -108,4 +99,15 @@
   align-items: center;
   color: black;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .a {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .b {
+    max-width: 450px;
+  }
 }
