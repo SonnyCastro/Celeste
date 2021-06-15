@@ -7,13 +7,8 @@
 .nav {
   display: flex;
   border: none;
-  /* margin: 0 auto; */
-
-  /* width: 335px; */
-  /* height: 55px; */
   border-radius: 10px;
   color: black;
-  /* background-color: white; */
 }
 
 .innernav {
@@ -22,9 +17,10 @@
   align-items: center;
   border-radius: 10px;
   justify-content: center;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   width: 500px;
   background: white;
+  /* color: white; */
   margin-bottom: 2rem;
 }
 
@@ -91,6 +87,9 @@
   max-width: 367px;
   /* max-height: 449px; */
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   justify-self: center;
   place-self: center;
 }
@@ -136,6 +135,7 @@
   font-size: 16px;
   line-height: 19px;
   max-width: 280px;
+  padding-inline: 0.5rem;
 }
 
 .viewAppContainer {

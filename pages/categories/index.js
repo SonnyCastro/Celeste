@@ -47,7 +47,7 @@ export default function Categories({ categories }) {
           <div className={styles.item} key={category.id}>
             <h3 className={styles.name}>{category.name}</h3>
             <div className={styles.description}>
-              <h3>{category.description}</h3>
+              <p>{category.description}</p>
             </div>
             <div className={styles.viewAppContainer}>
               <Link href={`/categories/${category.slug}`}>
