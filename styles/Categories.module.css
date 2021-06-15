@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap"); */
 
 .testing {
   padding: 0 1.5rem;
@@ -151,11 +151,11 @@
 }
 
 .container {
-  display: grid;
+  display: inline-grid;
   justify-content: center;
   padding: 0 1rem;
-  gap: 2rem;
-  grid-template-columns: auto;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .headerText {
@@ -181,5 +181,15 @@
     /* display: flex; */
     text-align: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 2rem;
+    grid-template-columns: auto;
   }
 }

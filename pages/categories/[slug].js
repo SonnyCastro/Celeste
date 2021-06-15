@@ -12,6 +12,7 @@ export default function Assets({ categoryAssets, slug }) {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.assetConatiner}>
+        <h1 style={{ color: "white" }}>Asset Page</h1>
         {assets?.map((asset) => {
           return (
             <div

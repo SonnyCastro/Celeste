@@ -33,21 +33,7 @@ export default function Categories({ categories }) {
         >
           Explore the Metaverse ☽
         </h2>
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            height: "50px",
-            maxWidth: "1060px",
-          }}
-        >
-          <Image
-            alt="breakline"
-            src="/line.svg"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
+        <Image alt="breakline" src="/line.svg" width={880} height={50} />
         <p className={styles.headerText}>
           Celeste is your portal to the crypto metaverse. As the metaverse
           expands, it becomes harder to find apps you can benefit from. We
