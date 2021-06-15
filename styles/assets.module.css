@@ -1,9 +1,15 @@
-.assetConatiner {
+.pageContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  padding: 9rem 0.5rem;
+  justify-content: center;
+  padding-top: 9rem;
+}
+.assetConatiner {
+  display: inline-grid;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding-inline: 1rem;
+  gap: 1.5rem 0.5rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .assetCardContainer {
@@ -16,7 +22,7 @@
   margin: 0.5rem;
   max-width: 563.77px;
   align-items: center;
-  /* height: 216px; */
+  height: 100%;
   border-radius: 10px;
   background: radial-gradient(
       99.99% 514.99% at 100.13% 49.64%,
@@ -45,4 +51,13 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .assetConatiner {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    grid-template-columns: auto;
+  }
 }

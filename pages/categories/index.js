@@ -10,7 +10,7 @@ export default function Categories({ categories }) {
   const [click, setClick] = useState(false);
   // const { loading, error, data } = useQuery(QUERY);
 
-  console.log(categories);
+  // console.log(categories);
   let categoryList = ["DeFi", "Art", "Trade", "Gaming"];
 
   return (
@@ -19,9 +19,11 @@ export default function Categories({ categories }) {
         <div className={styles.innernav}>
           {categoryList?.map((category) => {
             return (
-              <button className={styles.navitem}>
-                <p className={styles.navitemtext}>{category}</p>
-              </button>
+              <>
+                <button key={category.id} className={styles.navitem}>
+                  <p className={styles.navitemtext}>{category}</p>
+                </button>
+              </>
             );
           })}
         </div>

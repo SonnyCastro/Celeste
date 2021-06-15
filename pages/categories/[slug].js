@@ -12,29 +12,26 @@ export default function Assets({ categoryAssets, slug }) {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.assetConatiner}>
-        <h1 style={{ color: "white" }}>Asset Page</h1>
         {assets?.map((asset) => {
           return (
-            <div
-              key={asset.name}
-              id={asset.name}
-              className={styles.assetCardContainer}
-            >
-              <div className={styles.assetCardHeadingContainer}>
-                <h1>{asset.name}</h1>
-                <img src={asset.logo.url} alt="img" />
-              </div>
+            <Link href={`/categories/asset/${asset.name}`}>
+              <a>
+                <div
+                  key={asset.name}
+                  id={asset.name}
+                  className={styles.assetCardContainer}
+                >
+                  <div className={styles.assetCardHeadingContainer}>
+                    <h1>{asset.name}</h1>
+                    <img src={asset.logo.url} alt="img" />
+                  </div>
 
-              <div id={styles.test}>
-                <p>{asset.description}</p>
-              </div>
-
-              <Link href={`/categories/asset/${asset.name}`}>
-                <a style={{ marginBlock: "1rem", color: "blue" }}>
-                  Go to Asset
-                </a>
-              </Link>
-            </div>
+                  <div id={styles.test}>
+                    <p>{asset.description}</p>
+                  </div>
+                </div>
+              </a>
+            </Link>
           );
         })}
       </div>
@@ -66,9 +63,9 @@ export async function getStaticProps({ params }) {
     `https://blooming-plateau-28061.herokuapp.com/categories?slug=${params.slug}`
   );
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   // console.log(data[0]);
-  console.log(`${params.slug}`);
+  // console.log(`${params.slug}`);
 
   return {
     props: { categoryAssets: data[0], slug: params.slug },
