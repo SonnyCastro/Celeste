@@ -1,0 +1,109 @@
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8rem 1rem 0 1rem;
+}
+.title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  color: #dde8d5;
+}
+
+.what {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  background: radial-gradient(
+      99.99% 514.99% at 100.13% 49.64%,
+      #ffe9d5 0%,
+      #f8e2ff 0.01%,
+      rgba(7, 100, 240, 0) 100%
+    ),
+    linear-gradient(0deg, #dde8d5, #dde8d5);
+  background-clip: text;
+  color: transparent;
+}
+
+.why {
+  margin-top: 40px;
+  padding-bottom: 0.5rem;
+}
+
+.totalValueLocked {
+  margin-top: 72px;
+  padding-bottom: 0.5rem;
+}
+
+.tokenPrice {
+  margin-top: 40px;
+  padding-bottom: 0.5rem;
+}
+
+.followTwitterAccounts {
+  margin-top: 64px;
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #dde8d5;
+}
+
+.info {
+  background: #f2f9ec;
+  border-radius: 14px;
+  max-width: 434px;
+  width: 100%;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoText {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  color: #343639;
+}
+.infoTextSmall {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  padding-left: 12rem;
+  font-size: 1rem;
+  color: #343639;
+}
+
+.twitterAccounts {
+  display: flex;
+  max-width: 28rem;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.twitterAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f9ec;
+  border-radius: 8px;
+  color: black;
+  width: 160px;
+  height: 36px;
+}
